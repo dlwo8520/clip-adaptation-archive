@@ -1,0 +1,19 @@
+{
+  "target": {
+    "accuracy": 0.7361702127659574,
+    "correct": 2076,
+    "total": 2820
+  },
+  "preserve": {
+    "imagenet": {
+      "accuracy": 0.4636,
+      "correct": 2318,
+      "total": 5000
+    },
+    "cifar100": {
+      "accuracy": 0.4096,
+      "correct": 4096,
+      "total": 10000
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "target_name": "texture",
+  "target_root": "/data/datasets/texture",
+  "target_train": null,
+  "target_test": null,
+  "target_classnames": null,
+  "split_test_ratio": 0.5,
+  "preserve": [
+    "imagenet:/data/datasets/imagenet_1k/val",
+    "cifar100:/data/datasets/cifar100/test"
+  ],
+  "model": "ViT-B-32-quickgelu",
+  "pretrained": "openai",
+  "shots_list": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "n_ctx": 16,
+  "epochs": 50,
+  "eval_every": 5,
+  "lr": 0.002,
+  "weight_decay": 0.0,
+  "batch_size": 128,
+  "num_workers": 2,
+  "device": "cuda",
+  "seed": 42,
+  "prompt_seed": 777,
+  "sample_seed": 23,
+  "max_eval_samples": -1,
+  "cache_features": true,
+  "output_dir": "runs/zscl_coop_textdrift/sample_seed_23",
+  "selection_method": "text_drift",
+  "selection_candidate_factor": 2,
+  "text_drift_vocab_file": null,
+  "text_drift_vocab_size": 1000,
+  "text_drift_vocab_seed": 12345,
+  "text_drift_step_size": 0.01,
+  "text_drift_templates": "default",
+  "text_drift_chunk_size": 1024
+}

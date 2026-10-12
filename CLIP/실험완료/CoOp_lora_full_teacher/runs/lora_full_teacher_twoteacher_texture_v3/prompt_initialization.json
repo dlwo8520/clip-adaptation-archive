@@ -1,0 +1,9 @@
+{
+  "prompt_seed": 777,
+  "same_initial_context_across_shots": true,
+  "ctx_shape": [
+    16,
+    512
+  ],
+  "init_std": 0.02
+}

@@ -1,0 +1,35 @@
+{
+  "target_name": "texture",
+  "target_root": "/data/datasets/texture",
+  "target_train": null,
+  "target_test": null,
+  "target_classnames": null,
+  "split_test_ratio": 0.5,
+  "preserve": [
+    "imagenet:/data/datasets/imagenet_1k/val",
+    "cifar100:/data/datasets/cifar100/test"
+  ],
+  "model": "ViT-B-32-quickgelu",
+  "pretrained": "openai",
+  "shots_list": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "n_ctx": 16,
+  "epochs": 50,
+  "eval_every": 5,
+  "lr": 0.002,
+  "weight_decay": 0.0,
+  "batch_size": 128,
+  "num_workers": 4,
+  "device": "cuda",
+  "seed": 42,
+  "prompt_seed": 777,
+  "sample_seed": 6,
+  "max_eval_samples": -1,
+  "cache_features": true,
+  "output_dir": "runs/blue_texture_preserve_100seeds/sample_seed_6"
+}

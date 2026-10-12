@@ -1,0 +1,10 @@
+nohup: ignoring input
+===== launch Adapter + CoOp all methods =====
+BASE_OUT   : runs/zscl_texture_all_methods_gpu1
+ADAPTER_GPU: 1
+COOP_GPU   : 1
+inner PARALLEL: 1 each, total 2 processes
+adapter pid: 652070
+coop pid   : 652071
+adapter log: runs/zscl_texture_all_methods_gpu1/logs/adapter_all_methods.log
+coop log   : runs/zscl_texture_all_methods_gpu1/logs/coop_all_methods.log

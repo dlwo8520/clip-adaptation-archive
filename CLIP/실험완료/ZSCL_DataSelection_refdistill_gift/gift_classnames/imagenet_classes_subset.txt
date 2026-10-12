@@ -1,0 +1,20 @@
+goldfish
+tiger
+beagle
+hummingbird
+school bus
+sports car
+pizza
+cheeseburger
+red wine
+violin
+acoustic guitar
+sunflower
+daisy
+mountain bike
+sailboat
+backpack
+umbrella
+laptop
+basketball
+toaster

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "CLIP-001",
+    "name": "CoOp",
+    "method": "CoOp prompt-only adaptation",
+    "hypothesis": "Test target/preservation trade-off",
+    "status": "nonempty raw base results; duplicated copies exist",
+    "source_roots": [
+      "CLIP/그래프/CoOp",
+      "CLIP/실험완료/CoOp",
+      "CLIP/코드/CoOp"
+    ],
+    "documents": [
+      "CLIP/실험완료/CoOp/README.md",
+      "CLIP/실험완료/CoOp/EXPERIMENT_GUIDE.md",
+      "CLIP/코드/CoOp/README.md",
+      "CLIP/코드/CoOp/EXPERIMENT_GUIDE.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/CoOp/scripts/run_smoke_gpu1.sh",
+      "CLIP/실험완료/CoOp/scripts/check_dataset_structure.sh",
+      "CLIP/실험완료/CoOp/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/실험완료/CoOp/scripts/run_texture_gpu1.sh",
+      "CLIP/코드/CoOp/scripts/run_smoke_gpu1.sh",
+      "CLIP/코드/CoOp/scripts/check_dataset_structure.sh",
+      "CLIP/코드/CoOp/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/코드/CoOp/scripts/run_texture_gpu1.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-002",
+    "name": "CLIP_Adapter_project_v4",
+    "method": "CLIP visual adapter, CoOp and CoCoOp implementations",
+    "hypothesis": "Compare adaptation mechanisms",
+    "status": "nonempty adapter/base evidence; CoCoOp code is not proof of a completed run",
+    "source_roots": [
+      "CLIP/실험완료/CLIP_Adapter_project_v4",
+      "CLIP/코드/CLIP_Adapter_project_v4"
+    ],
+    "documents": [
+      "CLIP/실험완료/CLIP_Adapter_project_v4/README.md",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/FIXES.md",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/EXPERIMENT_GUIDE.md",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/COCOOP_ADDED_GUIDE.md",
+      "CLIP/코드/CLIP_Adapter_project_v4/README.md",
+      "CLIP/코드/CLIP_Adapter_project_v4/FIXES.md",
+      "CLIP/코드/CLIP_Adapter_project_v4/EXPERIMENT_GUIDE.md",
+      "CLIP/코드/CLIP_Adapter_project_v4/COCOOP_ADDED_GUIDE.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_smoke_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/check_dataset_structure.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_cocoop_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_adapter_100seeds_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_adapter_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_gpu1.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_adapter_parallel.sh",
+      "CLIP/실험완료/CLIP_Adapter_project_v4/scripts/run_texture_cocoop_100seeds_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_smoke_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/check_dataset_structure.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_cocoop_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_adapter_100seeds_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_adapter_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_gpu1.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_adapter_parallel.sh",
+      "CLIP/코드/CLIP_Adapter_project_v4/scripts/run_texture_cocoop_100seeds_gpu1.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-003",
+    "name": "ZSCL_DataSelection_all_methods_wrappers",
+    "method": "Confidence, margin, prototype, negative-confidence support ranking",
+    "hypothesis": "Choose stable support sets",
+    "status": "empty local run records; graph summaries survive for several methods",
+    "source_roots": [
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers"
+    ],
+    "documents": [],
+    "scripts": [
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/run_smoke_after_gpu1_free.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_adapter_zscl_100seeds_gpu1.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_adapter_zscl_methods_parallel.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_adapter_zscl_methods.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_coop_zscl_methods.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_coop_zscl_100seeds_gpu1.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/launch_adapter_and_coop_all_methods_total2.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_coop_teacher_uncertain_100seeds_gpu1.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/run_smoke_after_gpu1_free.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_adapter_zscl_100seeds_gpu1.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_adapter_zscl_methods_parallel.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_adapter_zscl_methods.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_all_coop_zscl_methods.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_coop_zscl_100seeds_gpu1.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/launch_adapter_and_coop_all_methods_total2.sh",
+      "CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/scripts/run_texture_coop_teacher_uncertain_100seeds_gpu1.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-004",
+    "name": "ZSCL_CoOp_TextDrift_Selection",
+    "method": "One-step prompt-gradient perturbation and vocabulary text-feature drift",
+    "hypothesis": "Select supports with smaller text drift",
+    "status": "100 nonempty support-seed result records found",
+    "source_roots": [
+      "CLIP/실험완료/ZSCL_CoOp_TextDrift_Selection"
+    ],
+    "documents": [
+      "CLIP/실험완료/ZSCL_CoOp_TextDrift_Selection/README.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/ZSCL_CoOp_TextDrift_Selection/scripts/run_texture_coop_textdrift_100seeds.sh",
+      "CLIP/실험완료/ZSCL_CoOp_TextDrift_Selection/scripts/run_smoke_textdrift.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-005",
+    "name": "ZSCL_DataSelection_entropy_only",
+    "method": "Predictive entropy rather than negative confidence",
+    "hypothesis": "Test uncertainty criteria",
+    "status": "empty local result records; standalone tables survive",
+    "source_roots": [
+      "CLIP/실험완료/ZSCL_DataSelection_entropy_only"
+    ],
+    "documents": [
+      "CLIP/실험완료/ZSCL_DataSelection_entropy_only/README_ENTROPY_ONLY.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/ZSCL_DataSelection_entropy_only/scripts/run_texture_coop_teacher_entropy_100seeds_gpu1.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_entropy_only/scripts/run_texture_coop_teacher_entropy_smoke_gpu1.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_entropy_only/scripts/run_texture_coop_teacher_entropy_100seeds_gpu1_parallel.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-006",
+    "name": "ZSCL_DataSelection_refdistill",
+    "method": "Reference text/image distribution distillation plus optional context anchoring",
+    "hypothesis": "Preserve reference predictions",
+    "status": "source/scripts present; recoverable completion must be checked per artifact",
+    "source_roots": [
+      "CLIP/코드/ZSCL_DataSelection_refdistill"
+    ],
+    "documents": [
+      "CLIP/코드/ZSCL_DataSelection_refdistill/README.md"
+    ],
+    "scripts": [
+      "CLIP/코드/ZSCL_DataSelection_refdistill/scripts/launch_6_configs_parallel.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill/scripts/run_coop_refdistill_one_config.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill/scripts/smoke_test_refdistill.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-007",
+    "name": "ZSCL_DataSelection_refdistill_2",
+    "method": "Three selection criteria × WC on/off",
+    "hypothesis": "Evaluate distillation and anchoring",
+    "status": "local result metadata absent/empty; standalone graph tables survive",
+    "source_roots": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2"
+    ],
+    "documents": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2/README.md",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2/README.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2/scripts/launch_6_configs_parallel.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2/scripts/run_coop_refdistill_one_config.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2/scripts/launch_6_configs_sequential.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_2/scripts/smoke_test_refdistill.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2/scripts/launch_6_configs_parallel.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2/scripts/run_coop_refdistill_one_config.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2/scripts/launch_6_configs_sequential.sh",
+      "CLIP/코드/ZSCL_DataSelection_refdistill_2/scripts/smoke_test_refdistill.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-008",
+    "name": "ZSCL_DataSelection_refdistill_gift",
+    "method": "Synthetic reference and GIFT-inspired teacher/reference variants",
+    "hypothesis": "Test synthetic preservation resources",
+    "status": "source/scripts and graph-only summaries; full original run metadata not recovered",
+    "source_roots": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift"
+    ],
+    "documents": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/README.md",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/README_GIFT.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/run_coop_gift_one_config.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/launch_6_configs_parallel.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/run_coop_refdistill_one_config.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/launch_gift_configs.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/run_gift_BCD_3selections_seed0_49_gpu4.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/launch_6_configs_sequential.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/smoke_test_gift.sh",
+      "CLIP/실험완료/ZSCL_DataSelection_refdistill_gift/scripts/smoke_test_refdistill.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-009",
+    "name": "CoOp_twoteacher_selected",
+    "method": "Original CLIP plus adapted CoOp teacher agreement/JS score",
+    "hypothesis": "Improve support quality",
+    "status": "nonempty selected-student run results",
+    "source_roots": [
+      "CLIP/실험완료/CoOp_twoteacher_selected",
+      "CLIP/코드/CoOp_twoteacher_selected"
+    ],
+    "documents": [
+      "CLIP/실험완료/CoOp_twoteacher_selected/README.md",
+      "CLIP/실험완료/CoOp_twoteacher_selected/EXPERIMENT_GUIDE.md",
+      "CLIP/실험완료/CoOp_twoteacher_selected/TWOTEACHER_EXPERIMENT.md",
+      "CLIP/코드/CoOp_twoteacher_selected/README.md",
+      "CLIP/코드/CoOp_twoteacher_selected/EXPERIMENT_GUIDE.md",
+      "CLIP/코드/CoOp_twoteacher_selected/TWOTEACHER_EXPERIMENT.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/CoOp_twoteacher_selected/scripts/run_smoke_gpu1.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected/scripts/check_dataset_structure.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected/scripts/run_twoteacher_texture_diag.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected/scripts/run_texture_gpu1.sh",
+      "CLIP/코드/CoOp_twoteacher_selected/scripts/run_smoke_gpu1.sh",
+      "CLIP/코드/CoOp_twoteacher_selected/scripts/check_dataset_structure.sh",
+      "CLIP/코드/CoOp_twoteacher_selected/scripts/run_twoteacher_texture_diag.sh",
+      "CLIP/코드/CoOp_twoteacher_selected/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/코드/CoOp_twoteacher_selected/scripts/run_texture_gpu1.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-010",
+    "name": "CoOp_twoteacher_selected_wc",
+    "method": "Two-teacher selection plus prompt weight consolidation",
+    "hypothesis": "Reduce shared-context drift",
+    "status": "nonempty WC-sweep results; different lambdas are distinct conditions",
+    "source_roots": [
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc"
+    ],
+    "documents": [
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/README.md",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/EXPERIMENT_GUIDE.md",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/TWOTEACHER_EXPERIMENT.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/scripts/run_smoke_gpu1.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/scripts/check_dataset_structure.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/scripts/run_twoteacher_texture_diag.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/실험완료/CoOp_twoteacher_selected_wc/scripts/run_texture_gpu1.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-011",
+    "name": "CoOp_lora_full_teacher",
+    "method": "Full-data LoRA teacher plus CLIP agreement",
+    "hypothesis": "Test a stronger full-data selector",
+    "status": "nonempty LoRA/student results; additional full-data resource",
+    "source_roots": [
+      "CLIP/실험완료/CoOp_lora_full_teacher"
+    ],
+    "documents": [
+      "CLIP/실험완료/CoOp_lora_full_teacher/README.md",
+      "CLIP/실험완료/CoOp_lora_full_teacher/EXPERIMENT_GUIDE.md",
+      "CLIP/실험완료/CoOp_lora_full_teacher/TWOTEACHER_EXPERIMENT.md",
+      "CLIP/실험완료/CoOp_lora_full_teacher/LORA_FULL_TEACHER_EXPERIMENT.md"
+    ],
+    "scripts": [
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/run_smoke_gpu1.sh",
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/check_dataset_structure.sh",
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/run_twoteacher_texture_diag.sh",
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/run_texture_100seeds_gpu1.sh",
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/run_texture_gpu1.sh",
+      "CLIP/실험완료/CoOp_lora_full_teacher/scripts/run_lora_full_teacher_texture.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  },
+  {
+    "id": "CLIP-012",
+    "name": "CoOp_js_tradeoff",
+    "method": "High-entropy anchor and JS-quantile support bins",
+    "hypothesis": "Diagnose sample-distribution trade-off",
+    "status": "implemented and graph-derived records; raw results.json absent",
+    "source_roots": [
+      "CLIP/코드/CoOp_js_tradeoff"
+    ],
+    "documents": [
+      "CLIP/코드/CoOp_js_tradeoff/README_JS_TRADEOFF.md"
+    ],
+    "scripts": [
+      "CLIP/코드/CoOp_js_tradeoff/scripts/run_js_tradeoff_random_remaining_100seeds_texture.sh",
+      "CLIP/코드/CoOp_js_tradeoff/scripts/run_js_tradeoff_modes_texture_diag.sh",
+      "CLIP/코드/CoOp_js_tradeoff/scripts/run_js_tradeoff_texture.sh"
+    ],
+    "baseline": "original CLIP and package-specific random adaptation",
+    "limitations": "See original documents; no inferred settings or numerical completion."
+  }
+]

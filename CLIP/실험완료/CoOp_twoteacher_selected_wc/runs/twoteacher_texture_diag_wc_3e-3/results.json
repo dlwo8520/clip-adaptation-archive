@@ -1,0 +1,2681 @@
+{
+  "args": {
+    "target_name": "texture",
+    "target_root": "/data/datasets/texture",
+    "target_train": null,
+    "target_test": null,
+    "target_classnames": null,
+    "split_test_ratio": 0.5,
+    "preserve": [
+      "imagenet:/data/datasets/imagenet_1k/val",
+      "cifar100:/data/datasets/cifar100/test"
+    ],
+    "teacher_runs_root": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds",
+    "teacher_project_root": ".",
+    "teacher_shots": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "teacher_top_k": 3,
+    "teacher_epoch": null,
+    "student_shots": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "pairing_mode": "matched",
+    "require_both_correct": true,
+    "strict_selection": false,
+    "exclude_teacher_support": false,
+    "save_all_candidate_scores": false,
+    "selection_seed": 2026,
+    "selection_batch_size": 256,
+    "lambda_clip": 1.0,
+    "lambda_teacher": 1.0,
+    "lambda_similarity": 1.0,
+    "lambda_wc": 0.003,
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "openai",
+    "n_ctx": 16,
+    "epochs": 50,
+    "eval_every": 5,
+    "lr": 0.002,
+    "weight_decay": 0.0,
+    "batch_size": 128,
+    "num_workers": 4,
+    "device": "cuda",
+    "seed": 42,
+    "prompt_seed": 777,
+    "max_eval_samples": -1,
+    "cache_features": true,
+    "output_dir": "runs/twoteacher_texture_diag_wc_3e-3"
+  },
+  "target_name": "texture",
+  "split_mode": "auto_classwise_split",
+  "preserve_info": {
+    "imagenet": {
+      "path": "/data/datasets/imagenet_1k/val",
+      "num_classes": 1000,
+      "num_images": 5000
+    },
+    "cifar100": {
+      "path": "/data/datasets/cifar100/test",
+      "num_classes": 100,
+      "num_images": 10000
+    }
+  },
+  "zero_shot_baselines": {
+    "target": {
+      "accuracy": 0.424822695035461,
+      "correct": 1198,
+      "total": 2820
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.605,
+        "correct": 3025,
+        "total": 5000
+      },
+      "cifar100": {
+        "accuracy": 0.6493,
+        "correct": 6493,
+        "total": 10000
+      }
+    }
+  },
+  "prompt_init": {
+    "prompt_seed": 777,
+    "same_initial_context_across_runs": true,
+    "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+    "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+  },
+  "selected_teachers": [
+    {
+      "teacher_shot": 1,
+      "sample_seed": 56,
+      "target_accuracy": 0.49645390070921985,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_56/shot_1/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_56/shot_1/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_56/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.49645390070921985,
+          "correct": 1400,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.07163120567375886
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4668,
+            "correct": 2334,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.1382
+          },
+          "cifar100": {
+            "accuracy": 0.5278,
+            "correct": 5278,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.12149999999999994
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.11568809300661087,
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 1
+    },
+    {
+      "teacher_shot": 1,
+      "sample_seed": 15,
+      "target_accuracy": 0.48865248226950353,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_15/shot_1/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_15/shot_1/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_15/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.48865248226950353,
+          "correct": 1378,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.06382978723404253
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5098,
+            "correct": 2549,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.09519999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.5883,
+            "correct": 5883,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06099999999999994
+          }
+        },
+        "sample_seed": 15,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.11696068942546844,
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 2
+    },
+    {
+      "teacher_shot": 1,
+      "sample_seed": 24,
+      "target_accuracy": 0.48865248226950353,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_24/shot_1/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_24/shot_1/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_24/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.48865248226950353,
+          "correct": 1378,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.06382978723404253
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5026,
+            "correct": 2513,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.10239999999999994
+          },
+          "cifar100": {
+            "accuracy": 0.5865,
+            "correct": 5865,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06279999999999997
+          }
+        },
+        "sample_seed": 24,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.1113511174917221,
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 3
+    },
+    {
+      "teacher_shot": 2,
+      "sample_seed": 10,
+      "target_accuracy": 0.5255319148936171,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_10/shot_2/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_10/shot_2/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_10/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5255319148936171,
+          "correct": 1482,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.10070921985815606
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5244,
+            "correct": 2622,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.0806
+          },
+          "cifar100": {
+            "accuracy": 0.6083,
+            "correct": 6083,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.041000000000000036
+          }
+        },
+        "sample_seed": 10,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.24656710028648376,
+          "train_acc": 0.9787234042553191,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 1
+    },
+    {
+      "teacher_shot": 2,
+      "sample_seed": 11,
+      "target_accuracy": 0.524468085106383,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_11/shot_2/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_11/shot_2/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_11/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.524468085106383,
+          "correct": 1479,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.09964539007092199
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5052,
+            "correct": 2526,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.0998
+          },
+          "cifar100": {
+            "accuracy": 0.5208,
+            "correct": 5208,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.12849999999999995
+          }
+        },
+        "sample_seed": 11,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.2871837317943573,
+          "train_acc": 0.9787234042553191,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 2
+    },
+    {
+      "teacher_shot": 2,
+      "sample_seed": 1,
+      "target_accuracy": 0.5202127659574468,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_2/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_2/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5202127659574468,
+          "correct": 1467,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.09539007092198581
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5192,
+            "correct": 2596,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.08579999999999999
+          },
+          "cifar100": {
+            "accuracy": 0.5829,
+            "correct": 5829,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06640000000000001
+          }
+        },
+        "sample_seed": 1,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.677405834197998,
+          "train_acc": 0.851063829787234,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 3
+    },
+    {
+      "teacher_shot": 4,
+      "sample_seed": 55,
+      "target_accuracy": 0.574468085106383,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_55/shot_4/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_55/shot_4/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_55/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.574468085106383,
+          "correct": 1620,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.14964539007092204
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.502,
+            "correct": 2510,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.10299999999999998
+          },
+          "cifar100": {
+            "accuracy": 0.5877,
+            "correct": 5877,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06159999999999999
+          }
+        },
+        "sample_seed": 55,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.2427668184676069,
+          "train_acc": 0.973404255319149,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 1
+    },
+    {
+      "teacher_shot": 4,
+      "sample_seed": 97,
+      "target_accuracy": 0.574468085106383,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_97/shot_4/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_97/shot_4/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_97/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.574468085106383,
+          "correct": 1620,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.14964539007092204
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4442,
+            "correct": 2221,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.1608
+          },
+          "cifar100": {
+            "accuracy": 0.5089,
+            "correct": 5089,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.14039999999999997
+          }
+        },
+        "sample_seed": 97,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.3053911214179181,
+          "train_acc": 0.9574468085106383,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 2
+    },
+    {
+      "teacher_shot": 4,
+      "sample_seed": 87,
+      "target_accuracy": 0.5726950354609929,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_87/shot_4/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_87/shot_4/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_87/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5726950354609929,
+          "correct": 1615,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.14787234042553188
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.45,
+            "correct": 2250,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.15499999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.5296,
+            "correct": 5296,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.11970000000000003
+          }
+        },
+        "sample_seed": 87,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.3432862682545439,
+          "train_acc": 0.9627659574468085,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 3
+    },
+    {
+      "teacher_shot": 8,
+      "sample_seed": 1,
+      "target_accuracy": 0.623758865248227,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_8/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_8/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.623758865248227,
+          "correct": 1759,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.198936170212766
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4576,
+            "correct": 2288,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.14739999999999998
+          },
+          "cifar100": {
+            "accuracy": 0.456,
+            "correct": 4560,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.19329999999999997
+          }
+        },
+        "sample_seed": 1,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.23905303503604644,
+          "train_acc": 0.973404255319149,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 1
+    },
+    {
+      "teacher_shot": 8,
+      "sample_seed": 22,
+      "target_accuracy": 0.6205673758865248,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_22/shot_8/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_22/shot_8/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_22/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.6205673758865248,
+          "correct": 1750,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.19574468085106378
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4312,
+            "correct": 2156,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.17379999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.4919,
+            "correct": 4919,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.15739999999999998
+          }
+        },
+        "sample_seed": 22,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.24906605640624432,
+          "train_acc": 0.973404255319149,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 2
+    },
+    {
+      "teacher_shot": 8,
+      "sample_seed": 13,
+      "target_accuracy": 0.6173758865248227,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_13/shot_8/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_13/shot_8/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_13/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.6173758865248227,
+          "correct": 1741,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.19255319148936167
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4358,
+            "correct": 2179,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.16919999999999996
+          },
+          "cifar100": {
+            "accuracy": 0.477,
+            "correct": 4770,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.1723
+          }
+        },
+        "sample_seed": 13,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.3574782197779797,
+          "train_acc": 0.9521276595744681,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 3
+    },
+    {
+      "teacher_shot": 16,
+      "sample_seed": 3,
+      "target_accuracy": 0.6684397163120568,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_3/shot_16/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_3/shot_16/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_3/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.6684397163120568,
+          "correct": 1885,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.2436170212765958
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4138,
+            "correct": 2069,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.19119999999999998
+          },
+          "cifar100": {
+            "accuracy": 0.4971,
+            "correct": 4971,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.1522
+          }
+        },
+        "sample_seed": 3,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.3462416428200742,
+          "train_acc": 0.9281914893617021,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 1
+    },
+    {
+      "teacher_shot": 16,
+      "sample_seed": 82,
+      "target_accuracy": 0.6617021276595745,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_82/shot_16/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_82/shot_16/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_82/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.6617021276595745,
+          "correct": 1866,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.23687943262411348
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.455,
+            "correct": 2275,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.14999999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.5191,
+            "correct": 5191,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.13019999999999998
+          }
+        },
+        "sample_seed": 82,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.35492822527885437,
+          "train_acc": 0.9281914893617021,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 2
+    },
+    {
+      "teacher_shot": 16,
+      "sample_seed": 98,
+      "target_accuracy": 0.6613475177304965,
+      "teacher_epoch": 50,
+      "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_98/shot_16/coop_prompt_final.pt",
+      "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_98/shot_16/history.json",
+      "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_98/results.json",
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.6613475177304965,
+          "correct": 1865,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.2365248226950355
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4588,
+            "correct": 2294,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.1462
+          },
+          "cifar100": {
+            "accuracy": 0.5289,
+            "correct": 5289,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.12039999999999995
+          }
+        },
+        "sample_seed": 98,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.38275837517799216,
+          "train_acc": 0.9162234042553191,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "teacher_rank": 3
+    }
+  ],
+  "runs": [
+    {
+      "teacher": {
+        "teacher_shot": 1,
+        "sample_seed": 56,
+        "target_accuracy": 0.49645390070921985,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_56/shot_1/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_56/shot_1/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_56/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 1,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.49645390070921985,
+            "correct": 1400,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.07163120567375886
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4668,
+              "correct": 2334,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.1382
+            },
+            "cifar100": {
+              "accuracy": 0.5278,
+              "correct": 5278,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.12149999999999994
+            }
+          },
+          "sample_seed": 56,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.11568809300661087,
+            "train_acc": 1.0,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 1
+      },
+      "student_shot": 1,
+      "selected_train_images": 47,
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4574468085106383,
+          "correct": 1290,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.0326241134751773
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5376,
+            "correct": 2688,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.06740000000000002
+          },
+          "cifar100": {
+            "accuracy": 0.6025,
+            "correct": 6025,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.04679999999999995
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.029275640845298767,
+          "ce_loss": 0.023845825344324112,
+          "wc_loss": 1.8099381923675537,
+          "total_loss": 0.029275640845298767,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 1,
+          "teacher_rank": 1,
+          "sample_seed": 56,
+          "target_accuracy": 0.49645390070921985,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_56/shot_1/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 1,
+          "selected_count": 47,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_1_seed_56/student_shot_1/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_1_seed_56/student_shot_1/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_1_seed_56/student_shot_1/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 1,
+        "sample_seed": 15,
+        "target_accuracy": 0.48865248226950353,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_15/shot_1/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_15/shot_1/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_15/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 1,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.48865248226950353,
+            "correct": 1378,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.06382978723404253
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.5098,
+              "correct": 2549,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.09519999999999995
+            },
+            "cifar100": {
+              "accuracy": 0.5883,
+              "correct": 5883,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.06099999999999994
+            }
+          },
+          "sample_seed": 15,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.11696068942546844,
+            "train_acc": 1.0,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 2
+      },
+      "student_shot": 1,
+      "selected_train_images": 47,
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4471631205673759,
+          "correct": 1261,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.022340425531914898
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.535,
+            "correct": 2675,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.06999999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.5946,
+            "correct": 5946,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.05469999999999997
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.030796105042099953,
+          "ce_loss": 0.026485301554203033,
+          "wc_loss": 1.4369347095489502,
+          "total_loss": 0.030796105042099953,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 1,
+          "teacher_rank": 2,
+          "sample_seed": 15,
+          "target_accuracy": 0.48865248226950353,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_15/shot_1/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 1,
+          "selected_count": 47,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_2_seed_15/student_shot_1/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_2_seed_15/student_shot_1/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_2_seed_15/student_shot_1/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 1,
+        "sample_seed": 24,
+        "target_accuracy": 0.48865248226950353,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_24/shot_1/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_24/shot_1/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_24/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 1,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.48865248226950353,
+            "correct": 1378,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.06382978723404253
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.5026,
+              "correct": 2513,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.10239999999999994
+            },
+            "cifar100": {
+              "accuracy": 0.5865,
+              "correct": 5865,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.06279999999999997
+            }
+          },
+          "sample_seed": 24,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.1113511174917221,
+            "train_acc": 1.0,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 3
+      },
+      "student_shot": 1,
+      "selected_train_images": 47,
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.45070921985815604,
+          "correct": 1271,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.025886524822695045
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5422,
+            "correct": 2711,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.06279999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.5852,
+            "correct": 5852,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06409999999999993
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.021810922771692276,
+          "ce_loss": 0.015287237241864204,
+          "wc_loss": 2.1745619773864746,
+          "total_loss": 0.021810922771692276,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 1,
+          "teacher_rank": 3,
+          "sample_seed": 24,
+          "target_accuracy": 0.48865248226950353,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_24/shot_1/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 1,
+          "selected_count": 47,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_3_seed_24/student_shot_1/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_3_seed_24/student_shot_1/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_1_rank_3_seed_24/student_shot_1/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 2,
+        "sample_seed": 10,
+        "target_accuracy": 0.5255319148936171,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_10/shot_2/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_10/shot_2/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_10/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 2,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.5255319148936171,
+            "correct": 1482,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.10070921985815606
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.5244,
+              "correct": 2622,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.0806
+            },
+            "cifar100": {
+              "accuracy": 0.6083,
+              "correct": 6083,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.041000000000000036
+            }
+          },
+          "sample_seed": 10,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.24656710028648376,
+            "train_acc": 0.9787234042553191,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 1
+      },
+      "student_shot": 2,
+      "selected_train_images": 94,
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4478723404255319,
+          "correct": 1263,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.023049645390070927
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5408,
+            "correct": 2704,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.06420000000000003
+          },
+          "cifar100": {
+            "accuracy": 0.6062,
+            "correct": 6062,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.04310000000000003
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.041663724929094315,
+          "ce_loss": 0.0384761206805706,
+          "wc_loss": 1.0625348091125488,
+          "total_loss": 0.041663724929094315,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 2,
+          "teacher_rank": 1,
+          "sample_seed": 10,
+          "target_accuracy": 0.5255319148936171,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_10/shot_2/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 2,
+          "selected_count": 94,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_1_seed_10/student_shot_2/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_1_seed_10/student_shot_2/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_1_seed_10/student_shot_2/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 2,
+        "sample_seed": 11,
+        "target_accuracy": 0.524468085106383,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_11/shot_2/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_11/shot_2/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_11/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 2,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.524468085106383,
+            "correct": 1479,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.09964539007092199
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.5052,
+              "correct": 2526,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.0998
+            },
+            "cifar100": {
+              "accuracy": 0.5208,
+              "correct": 5208,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.12849999999999995
+            }
+          },
+          "sample_seed": 11,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.2871837317943573,
+            "train_acc": 0.9787234042553191,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 2
+      },
+      "student_shot": 2,
+      "selected_train_images": 94,
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.45602836879432623,
+          "correct": 1286,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.031205673758865238
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5522,
+            "correct": 2761,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.05279999999999996
+          },
+          "cifar100": {
+            "accuracy": 0.598,
+            "correct": 5980,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.05130000000000001
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.03356146439909935,
+          "ce_loss": 0.029884904623031616,
+          "wc_loss": 1.2255198955535889,
+          "total_loss": 0.03356146439909935,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 2,
+          "teacher_rank": 2,
+          "sample_seed": 11,
+          "target_accuracy": 0.524468085106383,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_11/shot_2/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 2,
+          "selected_count": 94,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_2_seed_11/student_shot_2/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_2_seed_11/student_shot_2/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_2_seed_11/student_shot_2/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 2,
+        "sample_seed": 1,
+        "target_accuracy": 0.5202127659574468,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_2/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_2/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 2,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.5202127659574468,
+            "correct": 1467,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.09539007092198581
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.5192,
+              "correct": 2596,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.08579999999999999
+            },
+            "cifar100": {
+              "accuracy": 0.5829,
+              "correct": 5829,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.06640000000000001
+            }
+          },
+          "sample_seed": 1,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.677405834197998,
+            "train_acc": 0.851063829787234,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 3
+      },
+      "student_shot": 2,
+      "selected_train_images": 94,
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.450354609929078,
+          "correct": 1270,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.025531914893617003
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5324,
+            "correct": 2662,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.0726
+          },
+          "cifar100": {
+            "accuracy": 0.5831,
+            "correct": 5831,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06620000000000004
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.046755753457546234,
+          "ce_loss": 0.042730432003736496,
+          "wc_loss": 1.3417744636535645,
+          "total_loss": 0.046755753457546234,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 2,
+          "teacher_rank": 3,
+          "sample_seed": 1,
+          "target_accuracy": 0.5202127659574468,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_2/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 2,
+          "selected_count": 94,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_3_seed_1/student_shot_2/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_3_seed_1/student_shot_2/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_2_rank_3_seed_1/student_shot_2/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 4,
+        "sample_seed": 55,
+        "target_accuracy": 0.574468085106383,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_55/shot_4/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_55/shot_4/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_55/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 4,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.574468085106383,
+            "correct": 1620,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.14964539007092204
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.502,
+              "correct": 2510,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.10299999999999998
+            },
+            "cifar100": {
+              "accuracy": 0.5877,
+              "correct": 5877,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.06159999999999999
+            }
+          },
+          "sample_seed": 55,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.2427668184676069,
+            "train_acc": 0.973404255319149,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 1
+      },
+      "student_shot": 4,
+      "selected_train_images": 188,
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4968085106382979,
+          "correct": 1401,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.0719858156028369
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.56,
+            "correct": 2800,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.04499999999999993
+          },
+          "cifar100": {
+            "accuracy": 0.6314,
+            "correct": 6314,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.017900000000000027
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.03201609077130226,
+          "ce_loss": 0.026936767939874467,
+          "wc_loss": 1.6931072042343465,
+          "total_loss": 0.03201609077130226,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 4,
+          "teacher_rank": 1,
+          "sample_seed": 55,
+          "target_accuracy": 0.574468085106383,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_55/shot_4/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 4,
+          "selected_count": 188,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_1_seed_55/student_shot_4/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_1_seed_55/student_shot_4/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_1_seed_55/student_shot_4/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 4,
+        "sample_seed": 97,
+        "target_accuracy": 0.574468085106383,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_97/shot_4/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_97/shot_4/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_97/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 4,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.574468085106383,
+            "correct": 1620,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.14964539007092204
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4442,
+              "correct": 2221,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.1608
+            },
+            "cifar100": {
+              "accuracy": 0.5089,
+              "correct": 5089,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.14039999999999997
+            }
+          },
+          "sample_seed": 97,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.3053911214179181,
+            "train_acc": 0.9574468085106383,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 2
+      },
+      "student_shot": 4,
+      "selected_train_images": 188,
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5141843971631206,
+          "correct": 1450,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.08936170212765959
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5552,
+            "correct": 2776,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.049799999999999955
+          },
+          "cifar100": {
+            "accuracy": 0.6256,
+            "correct": 6256,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.023699999999999943
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.029122519921115104,
+          "ce_loss": 0.02458023933812659,
+          "wc_loss": 1.5140933128113443,
+          "total_loss": 0.029122519921115104,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 4,
+          "teacher_rank": 2,
+          "sample_seed": 97,
+          "target_accuracy": 0.574468085106383,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_97/shot_4/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 4,
+          "selected_count": 188,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_2_seed_97/student_shot_4/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_2_seed_97/student_shot_4/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_2_seed_97/student_shot_4/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 4,
+        "sample_seed": 87,
+        "target_accuracy": 0.5726950354609929,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_87/shot_4/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_87/shot_4/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_87/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 4,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.5726950354609929,
+            "correct": 1615,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.14787234042553188
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.45,
+              "correct": 2250,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.15499999999999997
+            },
+            "cifar100": {
+              "accuracy": 0.5296,
+              "correct": 5296,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.11970000000000003
+            }
+          },
+          "sample_seed": 87,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.3432862682545439,
+            "train_acc": 0.9627659574468085,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 3
+      },
+      "student_shot": 4,
+      "selected_train_images": 188,
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5152482269503547,
+          "correct": 1453,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.09042553191489366
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.532,
+            "correct": 2660,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.07299999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.5937,
+            "correct": 5937,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.05559999999999998
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.03860998169538823,
+          "ce_loss": 0.030289096916292575,
+          "wc_loss": 2.773628787791475,
+          "total_loss": 0.03860998169538823,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 4,
+          "teacher_rank": 3,
+          "sample_seed": 87,
+          "target_accuracy": 0.5726950354609929,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_87/shot_4/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 4,
+          "selected_count": 188,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_3_seed_87/student_shot_4/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_3_seed_87/student_shot_4/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_4_rank_3_seed_87/student_shot_4/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 8,
+        "sample_seed": 1,
+        "target_accuracy": 0.623758865248227,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_8/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_8/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_1/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 8,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.623758865248227,
+            "correct": 1759,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.198936170212766
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4576,
+              "correct": 2288,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.14739999999999998
+            },
+            "cifar100": {
+              "accuracy": 0.456,
+              "correct": 4560,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.19329999999999997
+            }
+          },
+          "sample_seed": 1,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.23905303503604644,
+            "train_acc": 0.973404255319149,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 1
+      },
+      "student_shot": 8,
+      "selected_train_images": 376,
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5400709219858156,
+          "correct": 1523,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.11524822695035464
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.537,
+            "correct": 2685,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.06799999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.5784,
+            "correct": 5784,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.07089999999999996
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.03028016188677321,
+          "ce_loss": 0.024902285651323644,
+          "wc_loss": 1.7926256225464192,
+          "total_loss": 0.03028016188677321,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 8,
+          "teacher_rank": 1,
+          "sample_seed": 1,
+          "target_accuracy": 0.623758865248227,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_1/shot_8/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 8,
+          "selected_count": 376,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_1_seed_1/student_shot_8/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_1_seed_1/student_shot_8/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_1_seed_1/student_shot_8/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 8,
+        "sample_seed": 22,
+        "target_accuracy": 0.6205673758865248,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_22/shot_8/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_22/shot_8/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_22/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 8,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.6205673758865248,
+            "correct": 1750,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.19574468085106378
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4312,
+              "correct": 2156,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.17379999999999995
+            },
+            "cifar100": {
+              "accuracy": 0.4919,
+              "correct": 4919,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.15739999999999998
+            }
+          },
+          "sample_seed": 22,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.24906605640624432,
+            "train_acc": 0.973404255319149,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 2
+      },
+      "student_shot": 8,
+      "selected_train_images": 376,
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5475177304964539,
+          "correct": 1544,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.12269503546099292
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5432,
+            "correct": 2716,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.061799999999999966
+          },
+          "cifar100": {
+            "accuracy": 0.6007,
+            "correct": 6007,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.04859999999999998
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.03973661489943241,
+          "ce_loss": 0.03444562979201053,
+          "wc_loss": 1.7636618106923205,
+          "total_loss": 0.03973661489943241,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 8,
+          "teacher_rank": 2,
+          "sample_seed": 22,
+          "target_accuracy": 0.6205673758865248,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_22/shot_8/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 8,
+          "selected_count": 376,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_2_seed_22/student_shot_8/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_2_seed_22/student_shot_8/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_2_seed_22/student_shot_8/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 8,
+        "sample_seed": 13,
+        "target_accuracy": 0.6173758865248227,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_13/shot_8/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_13/shot_8/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_13/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 8,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.6173758865248227,
+            "correct": 1741,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.19255319148936167
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4358,
+              "correct": 2179,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.16919999999999996
+            },
+            "cifar100": {
+              "accuracy": 0.477,
+              "correct": 4770,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.1723
+            }
+          },
+          "sample_seed": 13,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.3574782197779797,
+            "train_acc": 0.9521276595744681,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 3
+      },
+      "student_shot": 8,
+      "selected_train_images": 376,
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5297872340425532,
+          "correct": 1494,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.10496453900709224
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.517,
+            "correct": 2585,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.08799999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.592,
+            "correct": 5920,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.05730000000000002
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.04349633290412578,
+          "ce_loss": 0.03545394405088526,
+          "wc_loss": 2.6807961413200867,
+          "total_loss": 0.04349633290412578,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 8,
+          "teacher_rank": 3,
+          "sample_seed": 13,
+          "target_accuracy": 0.6173758865248227,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_13/shot_8/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 8,
+          "selected_count": 376,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_3_seed_13/student_shot_8/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_3_seed_13/student_shot_8/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_8_rank_3_seed_13/student_shot_8/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 16,
+        "sample_seed": 3,
+        "target_accuracy": 0.6684397163120568,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_3/shot_16/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_3/shot_16/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_3/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 16,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.6684397163120568,
+            "correct": 1885,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.2436170212765958
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4138,
+              "correct": 2069,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.19119999999999998
+            },
+            "cifar100": {
+              "accuracy": 0.4971,
+              "correct": 4971,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.1522
+            }
+          },
+          "sample_seed": 3,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.3462416428200742,
+            "train_acc": 0.9281914893617021,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 1
+      },
+      "student_shot": 16,
+      "selected_train_images": 752,
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5907801418439717,
+          "correct": 1666,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.16595744680851066
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4938,
+            "correct": 2469,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.11119999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.577,
+            "correct": 5770,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.07230000000000003
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.05441046204972774,
+          "ce_loss": 0.041977699925290775,
+          "wc_loss": 4.1442540351380694,
+          "total_loss": 0.05441046204972774,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 16,
+          "teacher_rank": 1,
+          "sample_seed": 3,
+          "target_accuracy": 0.6684397163120568,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_3/shot_16/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 16,
+          "selected_count": 752,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_1_seed_3/student_shot_16/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_1_seed_3/student_shot_16/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_1_seed_3/student_shot_16/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 16,
+        "sample_seed": 82,
+        "target_accuracy": 0.6617021276595745,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_82/shot_16/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_82/shot_16/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_82/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 16,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.6617021276595745,
+            "correct": 1866,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.23687943262411348
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.455,
+              "correct": 2275,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.14999999999999997
+            },
+            "cifar100": {
+              "accuracy": 0.5191,
+              "correct": 5191,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.13019999999999998
+            }
+          },
+          "sample_seed": 82,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.35492822527885437,
+            "train_acc": 0.9281914893617021,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 2
+      },
+      "student_shot": 16,
+      "selected_train_images": 752,
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5964539007092199,
+          "correct": 1682,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.1716312056737589
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5162,
+            "correct": 2581,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.08879999999999999
+          },
+          "cifar100": {
+            "accuracy": 0.5895,
+            "correct": 5895,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.059799999999999964
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.041686160608809045,
+          "ce_loss": 0.035073066883264704,
+          "wc_loss": 2.2043646041383136,
+          "total_loss": 0.041686160608809045,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 0.9986702127659575,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 16,
+          "teacher_rank": 2,
+          "sample_seed": 82,
+          "target_accuracy": 0.6617021276595745,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_82/shot_16/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 16,
+          "selected_count": 752,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_2_seed_82/student_shot_16/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_2_seed_82/student_shot_16/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_2_seed_82/student_shot_16/selection.json"
+    },
+    {
+      "teacher": {
+        "teacher_shot": 16,
+        "sample_seed": 98,
+        "target_accuracy": 0.6613475177304965,
+        "teacher_epoch": 50,
+        "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_98/shot_16/coop_prompt_final.pt",
+        "history_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_98/shot_16/history.json",
+        "result_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected/runs/blue_texture_preserve_100seeds/sample_seed_98/results.json",
+        "final": {
+          "target_name": "texture",
+          "shot": 16,
+          "epoch": 50,
+          "target": {
+            "accuracy": 0.6613475177304965,
+            "correct": 1865,
+            "total": 2820,
+            "zero_shot_baseline": 0.424822695035461,
+            "delta_from_zero_shot": 0.2365248226950355
+          },
+          "preserve": {
+            "imagenet": {
+              "accuracy": 0.4588,
+              "correct": 2294,
+              "total": 5000,
+              "zero_shot_baseline": 0.605,
+              "delta_from_zero_shot": -0.1462
+            },
+            "cifar100": {
+              "accuracy": 0.5289,
+              "correct": 5289,
+              "total": 10000,
+              "zero_shot_baseline": 0.6493,
+              "delta_from_zero_shot": -0.12039999999999995
+            }
+          },
+          "sample_seed": 98,
+          "split_seed": 42,
+          "prompt_seed": 777,
+          "train": {
+            "train_loss": 0.38275837517799216,
+            "train_acc": 0.9162234042553191,
+            "lr": 0.0
+          },
+          "prompt_init": {
+            "prompt_seed": 777,
+            "same_initial_context_across_shots": true,
+            "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+            "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+          }
+        },
+        "teacher_rank": 3
+      },
+      "student_shot": 16,
+      "selected_train_images": 752,
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5925531914893617,
+          "correct": 1671,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.1677304964539007
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5138,
+            "correct": 2569,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.09119999999999995
+          },
+          "cifar100": {
+            "accuracy": 0.5806,
+            "correct": 5806,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.06869999999999998
+          }
+        },
+        "sample_seed": 2026,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.0428281195778796,
+          "ce_loss": 0.036136414221626646,
+          "wc_loss": 2.230568581439079,
+          "total_loss": 0.0428281195778796,
+          "lambda_wc": 0.003,
+          "wc_reference": "initial_student_prompt",
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_runs": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "student CoOp prompt after two-teacher selected support adaptation"
+        },
+        "teacher": {
+          "teacher_shot": 16,
+          "teacher_rank": 3,
+          "sample_seed": 98,
+          "target_accuracy": 0.6613475177304965,
+          "checkpoint_path": "${RESEARCH_WORKSPACE}/projects/CoOp_twoteacher_selected_wc/runs/blue_texture_preserve_100seeds/sample_seed_98/shot_16/coop_prompt_final.pt"
+        },
+        "selection": {
+          "method": "two_teacher",
+          "student_shot": 16,
+          "selected_count": 752,
+          "require_both_correct": true,
+          "exclude_teacher_support": false
+        }
+      },
+      "history_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_3_seed_98/student_shot_16/history.json",
+      "checkpoint_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_3_seed_98/student_shot_16/coop_prompt_final.pt",
+      "selection_path": "runs/twoteacher_texture_diag_wc_3e-3/teacher_shot_16_rank_3_seed_98/student_shot_16/selection.json"
+    }
+  ]
+}

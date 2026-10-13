@@ -1,1 +1,3 @@
+# CLIP archive: use environments/requirements-clip.txt and package-specific requirements.
+# Environment selection and limitations: docs/REPRODUCIBILITY.md.
 -r environments/requirements-clip.txt

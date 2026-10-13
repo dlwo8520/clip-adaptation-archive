@@ -1,3 +1,6 @@
+# Research artifact policy: track selected code, configs, analyses and evidence.
+# Keep datasets, model weights, generated images, caches and secrets outside Git.
+# See docs/PROVENANCE.md and provenance/excluded_files.csv for export decisions.
 # Model/data/environment artifacts; numeric summaries remain versioned.
 __pycache__/
 *.py[cod]

@@ -1,0 +1,17 @@
+{
+  "selection_method": "text_drift",
+  "candidate_factor": 2,
+  "n_pool_images": 2820,
+  "vocab_size": 1000,
+  "vocab_file": null,
+  "vocab_size_arg": 1000,
+  "vocab_templates": [
+    "{}."
+  ],
+  "step_size": 0.01,
+  "mean_drift_value": 0.5648656487464905,
+  "median_drift_value": 0.5188602805137634,
+  "min_drift_value": 0.16968142986297607,
+  "max_drift_value": 1.9297387599945068,
+  "note": "text_drift = base_ctx에서 sample x_n으로 1-step 학습 시 vocabulary V의 평균 text feature가 얼마나 흔들리는가. drift_score = -drift_value (높을수록 보존 우수). PDS 논문 Theorem 2.1 Eq.6의 한-스텝 근사로, λ_{t+1} ≈ -∇J_preserve(θ_0) 자리에 J_preserve(θ) = mean_v ||φ(v;ctx) - φ(v;ctx_0)||^2 을 둔 것과 같음."
+}

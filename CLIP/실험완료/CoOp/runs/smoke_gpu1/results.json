@@ -1,0 +1,98 @@
+{
+  "args": {
+    "target_name": "cifar10_smoke",
+    "target_root": null,
+    "target_train": "/data/datasets/cifar10/train",
+    "target_test": "/data/datasets/cifar10/test",
+    "target_classnames": null,
+    "split_test_ratio": 0.5,
+    "preserve": [
+      "cifar100:/data/datasets/cifar100/test"
+    ],
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "openai",
+    "shots_list": [
+      1
+    ],
+    "n_ctx": 16,
+    "epochs": 1,
+    "eval_every": 1,
+    "lr": 0.002,
+    "weight_decay": 0.0,
+    "batch_size": 64,
+    "num_workers": 2,
+    "device": "cuda",
+    "seed": 42,
+    "prompt_seed": 777,
+    "max_eval_samples": 256,
+    "cache_features": true,
+    "output_dir": "runs/smoke_gpu1"
+  },
+  "target_name": "cifar10_smoke",
+  "split_mode": "explicit_train_test",
+  "preserve_info": {
+    "cifar100": {
+      "path": "/data/datasets/cifar100/test",
+      "num_classes": 100,
+      "num_images": 256
+    }
+  },
+  "zero_shot_baselines": {
+    "target": {
+      "accuracy": 0.9140625,
+      "correct": 234,
+      "total": 256
+    },
+    "preserve": {
+      "cifar100": {
+        "accuracy": 0.70703125,
+        "correct": 181,
+        "total": 256
+      }
+    }
+  },
+  "prompt_init": {
+    "prompt_seed": 777,
+    "same_initial_context_across_shots": true,
+    "epoch_0_meaning": "initialized CoOp prompt, not original zero-shot CLIP"
+  },
+  "shots": [
+    {
+      "shot": 1,
+      "fewshot_train_images": 10,
+      "final": {
+        "target_name": "cifar10_smoke",
+        "shot": 1,
+        "epoch": 1,
+        "target": {
+          "accuracy": 0.921875,
+          "correct": 236,
+          "total": 256,
+          "zero_shot_baseline": 0.9140625,
+          "delta_from_zero_shot": 0.0078125
+        },
+        "preserve": {
+          "cifar100": {
+            "accuracy": 0.4921875,
+            "correct": 126,
+            "total": 256,
+            "zero_shot_baseline": 0.70703125,
+            "delta_from_zero_shot": -0.21484375
+          }
+        },
+        "train": {
+          "train_loss": 0.9428410530090332,
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "initialized CoOp prompt, not original zero-shot CLIP"
+        }
+      },
+      "history_path": "runs/smoke_gpu1/shot_1/history.json",
+      "checkpoint_path": "runs/smoke_gpu1/shot_1/coop_prompt_final.pt"
+    }
+  ]
+}

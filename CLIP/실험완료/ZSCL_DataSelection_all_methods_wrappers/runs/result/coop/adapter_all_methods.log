@@ -1,0 +1,1813 @@
+===== run all Adapter ZSCL methods =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+BASE_OUT            : runs/zscl_texture_all_methods_gpu1
+METHODS             : random teacher_confident teacher_margin prototype teacher_uncertain
+PARALLEL            : 1
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+CANDIDATE_FACTOR    : 2
+
+===== [Adapter] start method=random =====
+ROOT_OUT=runs/zscl_texture_all_methods_gpu1/adapter/random
+===== Visual-only CLIP-Adapter + ZSCL data-selection: 100 sample-seed (parallel=1) =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+ROOT_OUT            : runs/zscl_texture_all_methods_gpu1/adapter/random
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+PARALLEL            : 1
+SELECTION_METHOD    : random
+CANDIDATE_FACTOR    : 2
+
+===== batch 1: seed 0 ~ 0 병렬 시작 =====
+  [start] sample_seed=0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 병렬 시작 =====
+  [start] sample_seed=1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 병렬 시작 =====
+  [start] sample_seed=2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 병렬 시작 =====
+  [start] sample_seed=3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 병렬 시작 =====
+  [start] sample_seed=4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 병렬 시작 =====
+  [start] sample_seed=5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 병렬 시작 =====
+  [start] sample_seed=6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 병렬 시작 =====
+  [start] sample_seed=7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 병렬 시작 =====
+  [start] sample_seed=8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 병렬 시작 =====
+  [start] sample_seed=9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 병렬 시작 =====
+  [start] sample_seed=10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 병렬 시작 =====
+  [start] sample_seed=11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 병렬 시작 =====
+  [start] sample_seed=12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 병렬 시작 =====
+  [start] sample_seed=13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 병렬 시작 =====
+  [start] sample_seed=14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 병렬 시작 =====
+  [start] sample_seed=15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 병렬 시작 =====
+  [start] sample_seed=16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 병렬 시작 =====
+  [start] sample_seed=17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 병렬 시작 =====
+  [start] sample_seed=18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 병렬 시작 =====
+  [start] sample_seed=19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 병렬 시작 =====
+  [start] sample_seed=20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 병렬 시작 =====
+  [start] sample_seed=21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 병렬 시작 =====
+  [start] sample_seed=22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 병렬 시작 =====
+  [start] sample_seed=23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 병렬 시작 =====
+  [start] sample_seed=24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 병렬 시작 =====
+  [start] sample_seed=25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 병렬 시작 =====
+  [start] sample_seed=26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 병렬 시작 =====
+  [start] sample_seed=27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 병렬 시작 =====
+  [start] sample_seed=28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 병렬 시작 =====
+  [start] sample_seed=29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 병렬 시작 =====
+  [start] sample_seed=30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 병렬 시작 =====
+  [start] sample_seed=31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 병렬 시작 =====
+  [start] sample_seed=32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 병렬 시작 =====
+  [start] sample_seed=33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 병렬 시작 =====
+  [start] sample_seed=34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 병렬 시작 =====
+  [start] sample_seed=35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 병렬 시작 =====
+  [start] sample_seed=36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 병렬 시작 =====
+  [start] sample_seed=37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 병렬 시작 =====
+  [start] sample_seed=38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 병렬 시작 =====
+  [start] sample_seed=39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 병렬 시작 =====
+  [start] sample_seed=40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 병렬 시작 =====
+  [start] sample_seed=41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 병렬 시작 =====
+  [start] sample_seed=42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 병렬 시작 =====
+  [start] sample_seed=43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 병렬 시작 =====
+  [start] sample_seed=44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 병렬 시작 =====
+  [start] sample_seed=45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 병렬 시작 =====
+  [start] sample_seed=46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 병렬 시작 =====
+  [start] sample_seed=47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 병렬 시작 =====
+  [start] sample_seed=48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 병렬 시작 =====
+  [start] sample_seed=49
+===== batch 50 완료 =====
+
+===== batch 51: seed 50 ~ 50 병렬 시작 =====
+  [start] sample_seed=50
+===== batch 51 완료 =====
+
+===== batch 52: seed 51 ~ 51 병렬 시작 =====
+  [start] sample_seed=51
+===== batch 52 완료 =====
+
+===== batch 53: seed 52 ~ 52 병렬 시작 =====
+  [start] sample_seed=52
+===== batch 53 완료 =====
+
+===== batch 54: seed 53 ~ 53 병렬 시작 =====
+  [start] sample_seed=53
+===== batch 54 완료 =====
+
+===== batch 55: seed 54 ~ 54 병렬 시작 =====
+  [start] sample_seed=54
+===== batch 55 완료 =====
+
+===== batch 56: seed 55 ~ 55 병렬 시작 =====
+  [start] sample_seed=55
+===== batch 56 완료 =====
+
+===== batch 57: seed 56 ~ 56 병렬 시작 =====
+  [start] sample_seed=56
+===== batch 57 완료 =====
+
+===== batch 58: seed 57 ~ 57 병렬 시작 =====
+  [start] sample_seed=57
+===== batch 58 완료 =====
+
+===== batch 59: seed 58 ~ 58 병렬 시작 =====
+  [start] sample_seed=58
+===== batch 59 완료 =====
+
+===== batch 60: seed 59 ~ 59 병렬 시작 =====
+  [start] sample_seed=59
+===== batch 60 완료 =====
+
+===== batch 61: seed 60 ~ 60 병렬 시작 =====
+  [start] sample_seed=60
+===== batch 61 완료 =====
+
+===== batch 62: seed 61 ~ 61 병렬 시작 =====
+  [start] sample_seed=61
+===== batch 62 완료 =====
+
+===== batch 63: seed 62 ~ 62 병렬 시작 =====
+  [start] sample_seed=62
+===== batch 63 완료 =====
+
+===== batch 64: seed 63 ~ 63 병렬 시작 =====
+  [start] sample_seed=63
+===== batch 64 완료 =====
+
+===== batch 65: seed 64 ~ 64 병렬 시작 =====
+  [start] sample_seed=64
+===== batch 65 완료 =====
+
+===== batch 66: seed 65 ~ 65 병렬 시작 =====
+  [start] sample_seed=65
+===== batch 66 완료 =====
+
+===== batch 67: seed 66 ~ 66 병렬 시작 =====
+  [start] sample_seed=66
+===== batch 67 완료 =====
+
+===== batch 68: seed 67 ~ 67 병렬 시작 =====
+  [start] sample_seed=67
+===== batch 68 완료 =====
+
+===== batch 69: seed 68 ~ 68 병렬 시작 =====
+  [start] sample_seed=68
+===== batch 69 완료 =====
+
+===== batch 70: seed 69 ~ 69 병렬 시작 =====
+  [start] sample_seed=69
+===== batch 70 완료 =====
+
+===== batch 71: seed 70 ~ 70 병렬 시작 =====
+  [start] sample_seed=70
+===== batch 71 완료 =====
+
+===== batch 72: seed 71 ~ 71 병렬 시작 =====
+  [start] sample_seed=71
+===== batch 72 완료 =====
+
+===== batch 73: seed 72 ~ 72 병렬 시작 =====
+  [start] sample_seed=72
+===== batch 73 완료 =====
+
+===== batch 74: seed 73 ~ 73 병렬 시작 =====
+  [start] sample_seed=73
+===== batch 74 완료 =====
+
+===== batch 75: seed 74 ~ 74 병렬 시작 =====
+  [start] sample_seed=74
+===== batch 75 완료 =====
+
+===== batch 76: seed 75 ~ 75 병렬 시작 =====
+  [start] sample_seed=75
+===== batch 76 완료 =====
+
+===== batch 77: seed 76 ~ 76 병렬 시작 =====
+  [start] sample_seed=76
+===== batch 77 완료 =====
+
+===== batch 78: seed 77 ~ 77 병렬 시작 =====
+  [start] sample_seed=77
+===== batch 78 완료 =====
+
+===== batch 79: seed 78 ~ 78 병렬 시작 =====
+  [start] sample_seed=78
+===== batch 79 완료 =====
+
+===== batch 80: seed 79 ~ 79 병렬 시작 =====
+  [start] sample_seed=79
+===== batch 80 완료 =====
+
+===== batch 81: seed 80 ~ 80 병렬 시작 =====
+  [start] sample_seed=80
+===== batch 81 완료 =====
+
+===== batch 82: seed 81 ~ 81 병렬 시작 =====
+  [start] sample_seed=81
+===== batch 82 완료 =====
+
+===== batch 83: seed 82 ~ 82 병렬 시작 =====
+  [start] sample_seed=82
+===== batch 83 완료 =====
+
+===== batch 84: seed 83 ~ 83 병렬 시작 =====
+  [start] sample_seed=83
+===== batch 84 완료 =====
+
+===== batch 85: seed 84 ~ 84 병렬 시작 =====
+  [start] sample_seed=84
+===== batch 85 완료 =====
+
+===== batch 86: seed 85 ~ 85 병렬 시작 =====
+  [start] sample_seed=85
+===== batch 86 완료 =====
+
+===== batch 87: seed 86 ~ 86 병렬 시작 =====
+  [start] sample_seed=86
+===== batch 87 완료 =====
+
+===== batch 88: seed 87 ~ 87 병렬 시작 =====
+  [start] sample_seed=87
+===== batch 88 완료 =====
+
+===== batch 89: seed 88 ~ 88 병렬 시작 =====
+  [start] sample_seed=88
+===== batch 89 완료 =====
+
+===== batch 90: seed 89 ~ 89 병렬 시작 =====
+  [start] sample_seed=89
+===== batch 90 완료 =====
+
+===== batch 91: seed 90 ~ 90 병렬 시작 =====
+  [start] sample_seed=90
+===== batch 91 완료 =====
+
+===== batch 92: seed 91 ~ 91 병렬 시작 =====
+  [start] sample_seed=91
+===== batch 92 완료 =====
+
+===== batch 93: seed 92 ~ 92 병렬 시작 =====
+  [start] sample_seed=92
+===== batch 93 완료 =====
+
+===== batch 94: seed 93 ~ 93 병렬 시작 =====
+  [start] sample_seed=93
+===== batch 94 완료 =====
+
+===== batch 95: seed 94 ~ 94 병렬 시작 =====
+  [start] sample_seed=94
+===== batch 95 완료 =====
+
+===== batch 96: seed 95 ~ 95 병렬 시작 =====
+  [start] sample_seed=95
+===== batch 96 완료 =====
+
+===== batch 97: seed 96 ~ 96 병렬 시작 =====
+  [start] sample_seed=96
+===== batch 97 완료 =====
+
+===== batch 98: seed 97 ~ 97 병렬 시작 =====
+  [start] sample_seed=97
+===== batch 98 완료 =====
+
+===== batch 99: seed 98 ~ 98 병렬 시작 =====
+  [start] sample_seed=98
+===== batch 99 완료 =====
+
+===== batch 100: seed 99 ~ 99 병렬 시작 =====
+  [start] sample_seed=99
+===== batch 100 완료 =====
+
+===== 전체 종료 =====
+results root: runs/zscl_texture_all_methods_gpu1/adapter/random
+===== [Adapter] done method=random =====
+
+===== [Adapter] start method=teacher_confident =====
+ROOT_OUT=runs/zscl_texture_all_methods_gpu1/adapter/teacher_confident
+===== Visual-only CLIP-Adapter + ZSCL data-selection: 100 sample-seed (parallel=1) =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+ROOT_OUT            : runs/zscl_texture_all_methods_gpu1/adapter/teacher_confident
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+PARALLEL            : 1
+SELECTION_METHOD    : teacher_confident
+CANDIDATE_FACTOR    : 2
+
+===== batch 1: seed 0 ~ 0 병렬 시작 =====
+  [start] sample_seed=0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 병렬 시작 =====
+  [start] sample_seed=1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 병렬 시작 =====
+  [start] sample_seed=2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 병렬 시작 =====
+  [start] sample_seed=3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 병렬 시작 =====
+  [start] sample_seed=4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 병렬 시작 =====
+  [start] sample_seed=5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 병렬 시작 =====
+  [start] sample_seed=6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 병렬 시작 =====
+  [start] sample_seed=7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 병렬 시작 =====
+  [start] sample_seed=8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 병렬 시작 =====
+  [start] sample_seed=9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 병렬 시작 =====
+  [start] sample_seed=10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 병렬 시작 =====
+  [start] sample_seed=11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 병렬 시작 =====
+  [start] sample_seed=12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 병렬 시작 =====
+  [start] sample_seed=13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 병렬 시작 =====
+  [start] sample_seed=14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 병렬 시작 =====
+  [start] sample_seed=15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 병렬 시작 =====
+  [start] sample_seed=16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 병렬 시작 =====
+  [start] sample_seed=17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 병렬 시작 =====
+  [start] sample_seed=18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 병렬 시작 =====
+  [start] sample_seed=19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 병렬 시작 =====
+  [start] sample_seed=20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 병렬 시작 =====
+  [start] sample_seed=21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 병렬 시작 =====
+  [start] sample_seed=22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 병렬 시작 =====
+  [start] sample_seed=23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 병렬 시작 =====
+  [start] sample_seed=24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 병렬 시작 =====
+  [start] sample_seed=25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 병렬 시작 =====
+  [start] sample_seed=26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 병렬 시작 =====
+  [start] sample_seed=27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 병렬 시작 =====
+  [start] sample_seed=28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 병렬 시작 =====
+  [start] sample_seed=29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 병렬 시작 =====
+  [start] sample_seed=30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 병렬 시작 =====
+  [start] sample_seed=31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 병렬 시작 =====
+  [start] sample_seed=32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 병렬 시작 =====
+  [start] sample_seed=33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 병렬 시작 =====
+  [start] sample_seed=34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 병렬 시작 =====
+  [start] sample_seed=35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 병렬 시작 =====
+  [start] sample_seed=36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 병렬 시작 =====
+  [start] sample_seed=37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 병렬 시작 =====
+  [start] sample_seed=38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 병렬 시작 =====
+  [start] sample_seed=39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 병렬 시작 =====
+  [start] sample_seed=40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 병렬 시작 =====
+  [start] sample_seed=41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 병렬 시작 =====
+  [start] sample_seed=42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 병렬 시작 =====
+  [start] sample_seed=43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 병렬 시작 =====
+  [start] sample_seed=44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 병렬 시작 =====
+  [start] sample_seed=45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 병렬 시작 =====
+  [start] sample_seed=46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 병렬 시작 =====
+  [start] sample_seed=47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 병렬 시작 =====
+  [start] sample_seed=48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 병렬 시작 =====
+  [start] sample_seed=49
+===== batch 50 완료 =====
+
+===== batch 51: seed 50 ~ 50 병렬 시작 =====
+  [start] sample_seed=50
+===== batch 51 완료 =====
+
+===== batch 52: seed 51 ~ 51 병렬 시작 =====
+  [start] sample_seed=51
+===== batch 52 완료 =====
+
+===== batch 53: seed 52 ~ 52 병렬 시작 =====
+  [start] sample_seed=52
+===== batch 53 완료 =====
+
+===== batch 54: seed 53 ~ 53 병렬 시작 =====
+  [start] sample_seed=53
+===== batch 54 완료 =====
+
+===== batch 55: seed 54 ~ 54 병렬 시작 =====
+  [start] sample_seed=54
+===== batch 55 완료 =====
+
+===== batch 56: seed 55 ~ 55 병렬 시작 =====
+  [start] sample_seed=55
+===== batch 56 완료 =====
+
+===== batch 57: seed 56 ~ 56 병렬 시작 =====
+  [start] sample_seed=56
+===== batch 57 완료 =====
+
+===== batch 58: seed 57 ~ 57 병렬 시작 =====
+  [start] sample_seed=57
+===== batch 58 완료 =====
+
+===== batch 59: seed 58 ~ 58 병렬 시작 =====
+  [start] sample_seed=58
+===== batch 59 완료 =====
+
+===== batch 60: seed 59 ~ 59 병렬 시작 =====
+  [start] sample_seed=59
+===== batch 60 완료 =====
+
+===== batch 61: seed 60 ~ 60 병렬 시작 =====
+  [start] sample_seed=60
+===== batch 61 완료 =====
+
+===== batch 62: seed 61 ~ 61 병렬 시작 =====
+  [start] sample_seed=61
+===== batch 62 완료 =====
+
+===== batch 63: seed 62 ~ 62 병렬 시작 =====
+  [start] sample_seed=62
+===== batch 63 완료 =====
+
+===== batch 64: seed 63 ~ 63 병렬 시작 =====
+  [start] sample_seed=63
+===== batch 64 완료 =====
+
+===== batch 65: seed 64 ~ 64 병렬 시작 =====
+  [start] sample_seed=64
+===== batch 65 완료 =====
+
+===== batch 66: seed 65 ~ 65 병렬 시작 =====
+  [start] sample_seed=65
+===== batch 66 완료 =====
+
+===== batch 67: seed 66 ~ 66 병렬 시작 =====
+  [start] sample_seed=66
+===== batch 67 완료 =====
+
+===== batch 68: seed 67 ~ 67 병렬 시작 =====
+  [start] sample_seed=67
+===== batch 68 완료 =====
+
+===== batch 69: seed 68 ~ 68 병렬 시작 =====
+  [start] sample_seed=68
+===== batch 69 완료 =====
+
+===== batch 70: seed 69 ~ 69 병렬 시작 =====
+  [start] sample_seed=69
+===== batch 70 완료 =====
+
+===== batch 71: seed 70 ~ 70 병렬 시작 =====
+  [start] sample_seed=70
+===== batch 71 완료 =====
+
+===== batch 72: seed 71 ~ 71 병렬 시작 =====
+  [start] sample_seed=71
+===== batch 72 완료 =====
+
+===== batch 73: seed 72 ~ 72 병렬 시작 =====
+  [start] sample_seed=72
+===== batch 73 완료 =====
+
+===== batch 74: seed 73 ~ 73 병렬 시작 =====
+  [start] sample_seed=73
+===== batch 74 완료 =====
+
+===== batch 75: seed 74 ~ 74 병렬 시작 =====
+  [start] sample_seed=74
+===== batch 75 완료 =====
+
+===== batch 76: seed 75 ~ 75 병렬 시작 =====
+  [start] sample_seed=75
+===== batch 76 완료 =====
+
+===== batch 77: seed 76 ~ 76 병렬 시작 =====
+  [start] sample_seed=76
+===== batch 77 완료 =====
+
+===== batch 78: seed 77 ~ 77 병렬 시작 =====
+  [start] sample_seed=77
+===== batch 78 완료 =====
+
+===== batch 79: seed 78 ~ 78 병렬 시작 =====
+  [start] sample_seed=78
+===== batch 79 완료 =====
+
+===== batch 80: seed 79 ~ 79 병렬 시작 =====
+  [start] sample_seed=79
+===== batch 80 완료 =====
+
+===== batch 81: seed 80 ~ 80 병렬 시작 =====
+  [start] sample_seed=80
+===== batch 81 완료 =====
+
+===== batch 82: seed 81 ~ 81 병렬 시작 =====
+  [start] sample_seed=81
+===== batch 82 완료 =====
+
+===== batch 83: seed 82 ~ 82 병렬 시작 =====
+  [start] sample_seed=82
+===== batch 83 완료 =====
+
+===== batch 84: seed 83 ~ 83 병렬 시작 =====
+  [start] sample_seed=83
+===== batch 84 완료 =====
+
+===== batch 85: seed 84 ~ 84 병렬 시작 =====
+  [start] sample_seed=84
+===== batch 85 완료 =====
+
+===== batch 86: seed 85 ~ 85 병렬 시작 =====
+  [start] sample_seed=85
+===== batch 86 완료 =====
+
+===== batch 87: seed 86 ~ 86 병렬 시작 =====
+  [start] sample_seed=86
+===== batch 87 완료 =====
+
+===== batch 88: seed 87 ~ 87 병렬 시작 =====
+  [start] sample_seed=87
+===== batch 88 완료 =====
+
+===== batch 89: seed 88 ~ 88 병렬 시작 =====
+  [start] sample_seed=88
+===== batch 89 완료 =====
+
+===== batch 90: seed 89 ~ 89 병렬 시작 =====
+  [start] sample_seed=89
+===== batch 90 완료 =====
+
+===== batch 91: seed 90 ~ 90 병렬 시작 =====
+  [start] sample_seed=90
+===== batch 91 완료 =====
+
+===== batch 92: seed 91 ~ 91 병렬 시작 =====
+  [start] sample_seed=91
+===== batch 92 완료 =====
+
+===== batch 93: seed 92 ~ 92 병렬 시작 =====
+  [start] sample_seed=92
+===== batch 93 완료 =====
+
+===== batch 94: seed 93 ~ 93 병렬 시작 =====
+  [start] sample_seed=93
+===== batch 94 완료 =====
+
+===== batch 95: seed 94 ~ 94 병렬 시작 =====
+  [start] sample_seed=94
+===== batch 95 완료 =====
+
+===== batch 96: seed 95 ~ 95 병렬 시작 =====
+  [start] sample_seed=95
+===== batch 96 완료 =====
+
+===== batch 97: seed 96 ~ 96 병렬 시작 =====
+  [start] sample_seed=96
+===== batch 97 완료 =====
+
+===== batch 98: seed 97 ~ 97 병렬 시작 =====
+  [start] sample_seed=97
+===== batch 98 완료 =====
+
+===== batch 99: seed 98 ~ 98 병렬 시작 =====
+  [start] sample_seed=98
+===== batch 99 완료 =====
+
+===== batch 100: seed 99 ~ 99 병렬 시작 =====
+  [start] sample_seed=99
+===== batch 100 완료 =====
+
+===== 전체 종료 =====
+results root: runs/zscl_texture_all_methods_gpu1/adapter/teacher_confident
+===== [Adapter] done method=teacher_confident =====
+
+===== [Adapter] start method=teacher_margin =====
+ROOT_OUT=runs/zscl_texture_all_methods_gpu1/adapter/teacher_margin
+===== Visual-only CLIP-Adapter + ZSCL data-selection: 100 sample-seed (parallel=1) =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+ROOT_OUT            : runs/zscl_texture_all_methods_gpu1/adapter/teacher_margin
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+PARALLEL            : 1
+SELECTION_METHOD    : teacher_margin
+CANDIDATE_FACTOR    : 2
+
+===== batch 1: seed 0 ~ 0 병렬 시작 =====
+  [start] sample_seed=0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 병렬 시작 =====
+  [start] sample_seed=1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 병렬 시작 =====
+  [start] sample_seed=2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 병렬 시작 =====
+  [start] sample_seed=3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 병렬 시작 =====
+  [start] sample_seed=4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 병렬 시작 =====
+  [start] sample_seed=5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 병렬 시작 =====
+  [start] sample_seed=6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 병렬 시작 =====
+  [start] sample_seed=7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 병렬 시작 =====
+  [start] sample_seed=8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 병렬 시작 =====
+  [start] sample_seed=9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 병렬 시작 =====
+  [start] sample_seed=10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 병렬 시작 =====
+  [start] sample_seed=11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 병렬 시작 =====
+  [start] sample_seed=12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 병렬 시작 =====
+  [start] sample_seed=13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 병렬 시작 =====
+  [start] sample_seed=14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 병렬 시작 =====
+  [start] sample_seed=15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 병렬 시작 =====
+  [start] sample_seed=16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 병렬 시작 =====
+  [start] sample_seed=17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 병렬 시작 =====
+  [start] sample_seed=18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 병렬 시작 =====
+  [start] sample_seed=19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 병렬 시작 =====
+  [start] sample_seed=20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 병렬 시작 =====
+  [start] sample_seed=21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 병렬 시작 =====
+  [start] sample_seed=22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 병렬 시작 =====
+  [start] sample_seed=23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 병렬 시작 =====
+  [start] sample_seed=24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 병렬 시작 =====
+  [start] sample_seed=25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 병렬 시작 =====
+  [start] sample_seed=26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 병렬 시작 =====
+  [start] sample_seed=27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 병렬 시작 =====
+  [start] sample_seed=28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 병렬 시작 =====
+  [start] sample_seed=29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 병렬 시작 =====
+  [start] sample_seed=30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 병렬 시작 =====
+  [start] sample_seed=31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 병렬 시작 =====
+  [start] sample_seed=32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 병렬 시작 =====
+  [start] sample_seed=33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 병렬 시작 =====
+  [start] sample_seed=34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 병렬 시작 =====
+  [start] sample_seed=35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 병렬 시작 =====
+  [start] sample_seed=36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 병렬 시작 =====
+  [start] sample_seed=37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 병렬 시작 =====
+  [start] sample_seed=38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 병렬 시작 =====
+  [start] sample_seed=39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 병렬 시작 =====
+  [start] sample_seed=40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 병렬 시작 =====
+  [start] sample_seed=41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 병렬 시작 =====
+  [start] sample_seed=42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 병렬 시작 =====
+  [start] sample_seed=43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 병렬 시작 =====
+  [start] sample_seed=44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 병렬 시작 =====
+  [start] sample_seed=45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 병렬 시작 =====
+  [start] sample_seed=46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 병렬 시작 =====
+  [start] sample_seed=47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 병렬 시작 =====
+  [start] sample_seed=48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 병렬 시작 =====
+  [start] sample_seed=49
+===== batch 50 완료 =====
+
+===== batch 51: seed 50 ~ 50 병렬 시작 =====
+  [start] sample_seed=50
+===== batch 51 완료 =====
+
+===== batch 52: seed 51 ~ 51 병렬 시작 =====
+  [start] sample_seed=51
+===== batch 52 완료 =====
+
+===== batch 53: seed 52 ~ 52 병렬 시작 =====
+  [start] sample_seed=52
+===== batch 53 완료 =====
+
+===== batch 54: seed 53 ~ 53 병렬 시작 =====
+  [start] sample_seed=53
+===== batch 54 완료 =====
+
+===== batch 55: seed 54 ~ 54 병렬 시작 =====
+  [start] sample_seed=54
+===== batch 55 완료 =====
+
+===== batch 56: seed 55 ~ 55 병렬 시작 =====
+  [start] sample_seed=55
+===== batch 56 완료 =====
+
+===== batch 57: seed 56 ~ 56 병렬 시작 =====
+  [start] sample_seed=56
+===== batch 57 완료 =====
+
+===== batch 58: seed 57 ~ 57 병렬 시작 =====
+  [start] sample_seed=57
+===== batch 58 완료 =====
+
+===== batch 59: seed 58 ~ 58 병렬 시작 =====
+  [start] sample_seed=58
+===== batch 59 완료 =====
+
+===== batch 60: seed 59 ~ 59 병렬 시작 =====
+  [start] sample_seed=59
+===== batch 60 완료 =====
+
+===== batch 61: seed 60 ~ 60 병렬 시작 =====
+  [start] sample_seed=60
+===== batch 61 완료 =====
+
+===== batch 62: seed 61 ~ 61 병렬 시작 =====
+  [start] sample_seed=61
+===== batch 62 완료 =====
+
+===== batch 63: seed 62 ~ 62 병렬 시작 =====
+  [start] sample_seed=62
+===== batch 63 완료 =====
+
+===== batch 64: seed 63 ~ 63 병렬 시작 =====
+  [start] sample_seed=63
+===== batch 64 완료 =====
+
+===== batch 65: seed 64 ~ 64 병렬 시작 =====
+  [start] sample_seed=64
+===== batch 65 완료 =====
+
+===== batch 66: seed 65 ~ 65 병렬 시작 =====
+  [start] sample_seed=65
+===== batch 66 완료 =====
+
+===== batch 67: seed 66 ~ 66 병렬 시작 =====
+  [start] sample_seed=66
+===== batch 67 완료 =====
+
+===== batch 68: seed 67 ~ 67 병렬 시작 =====
+  [start] sample_seed=67
+===== batch 68 완료 =====
+
+===== batch 69: seed 68 ~ 68 병렬 시작 =====
+  [start] sample_seed=68
+===== batch 69 완료 =====
+
+===== batch 70: seed 69 ~ 69 병렬 시작 =====
+  [start] sample_seed=69
+===== batch 70 완료 =====
+
+===== batch 71: seed 70 ~ 70 병렬 시작 =====
+  [start] sample_seed=70
+===== batch 71 완료 =====
+
+===== batch 72: seed 71 ~ 71 병렬 시작 =====
+  [start] sample_seed=71
+===== batch 72 완료 =====
+
+===== batch 73: seed 72 ~ 72 병렬 시작 =====
+  [start] sample_seed=72
+===== batch 73 완료 =====
+
+===== batch 74: seed 73 ~ 73 병렬 시작 =====
+  [start] sample_seed=73
+===== batch 74 완료 =====
+
+===== batch 75: seed 74 ~ 74 병렬 시작 =====
+  [start] sample_seed=74
+===== batch 75 완료 =====
+
+===== batch 76: seed 75 ~ 75 병렬 시작 =====
+  [start] sample_seed=75
+===== batch 76 완료 =====
+
+===== batch 77: seed 76 ~ 76 병렬 시작 =====
+  [start] sample_seed=76
+===== batch 77 완료 =====
+
+===== batch 78: seed 77 ~ 77 병렬 시작 =====
+  [start] sample_seed=77
+===== batch 78 완료 =====
+
+===== batch 79: seed 78 ~ 78 병렬 시작 =====
+  [start] sample_seed=78
+===== batch 79 완료 =====
+
+===== batch 80: seed 79 ~ 79 병렬 시작 =====
+  [start] sample_seed=79
+===== batch 80 완료 =====
+
+===== batch 81: seed 80 ~ 80 병렬 시작 =====
+  [start] sample_seed=80
+===== batch 81 완료 =====
+
+===== batch 82: seed 81 ~ 81 병렬 시작 =====
+  [start] sample_seed=81
+===== batch 82 완료 =====
+
+===== batch 83: seed 82 ~ 82 병렬 시작 =====
+  [start] sample_seed=82
+===== batch 83 완료 =====
+
+===== batch 84: seed 83 ~ 83 병렬 시작 =====
+  [start] sample_seed=83
+===== batch 84 완료 =====
+
+===== batch 85: seed 84 ~ 84 병렬 시작 =====
+  [start] sample_seed=84
+===== batch 85 완료 =====
+
+===== batch 86: seed 85 ~ 85 병렬 시작 =====
+  [start] sample_seed=85
+===== batch 86 완료 =====
+
+===== batch 87: seed 86 ~ 86 병렬 시작 =====
+  [start] sample_seed=86
+===== batch 87 완료 =====
+
+===== batch 88: seed 87 ~ 87 병렬 시작 =====
+  [start] sample_seed=87
+===== batch 88 완료 =====
+
+===== batch 89: seed 88 ~ 88 병렬 시작 =====
+  [start] sample_seed=88
+===== batch 89 완료 =====
+
+===== batch 90: seed 89 ~ 89 병렬 시작 =====
+  [start] sample_seed=89
+===== batch 90 완료 =====
+
+===== batch 91: seed 90 ~ 90 병렬 시작 =====
+  [start] sample_seed=90
+===== batch 91 완료 =====
+
+===== batch 92: seed 91 ~ 91 병렬 시작 =====
+  [start] sample_seed=91
+===== batch 92 완료 =====
+
+===== batch 93: seed 92 ~ 92 병렬 시작 =====
+  [start] sample_seed=92
+===== batch 93 완료 =====
+
+===== batch 94: seed 93 ~ 93 병렬 시작 =====
+  [start] sample_seed=93
+===== batch 94 완료 =====
+
+===== batch 95: seed 94 ~ 94 병렬 시작 =====
+  [start] sample_seed=94
+===== batch 95 완료 =====
+
+===== batch 96: seed 95 ~ 95 병렬 시작 =====
+  [start] sample_seed=95
+===== batch 96 완료 =====
+
+===== batch 97: seed 96 ~ 96 병렬 시작 =====
+  [start] sample_seed=96
+===== batch 97 완료 =====
+
+===== batch 98: seed 97 ~ 97 병렬 시작 =====
+  [start] sample_seed=97
+===== batch 98 완료 =====
+
+===== batch 99: seed 98 ~ 98 병렬 시작 =====
+  [start] sample_seed=98
+===== batch 99 완료 =====
+
+===== batch 100: seed 99 ~ 99 병렬 시작 =====
+  [start] sample_seed=99
+===== batch 100 완료 =====
+
+===== 전체 종료 =====
+results root: runs/zscl_texture_all_methods_gpu1/adapter/teacher_margin
+===== [Adapter] done method=teacher_margin =====
+
+===== [Adapter] start method=prototype =====
+ROOT_OUT=runs/zscl_texture_all_methods_gpu1/adapter/prototype
+===== Visual-only CLIP-Adapter + ZSCL data-selection: 100 sample-seed (parallel=1) =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+ROOT_OUT            : runs/zscl_texture_all_methods_gpu1/adapter/prototype
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+PARALLEL            : 1
+SELECTION_METHOD    : prototype
+CANDIDATE_FACTOR    : 2
+
+===== batch 1: seed 0 ~ 0 병렬 시작 =====
+  [start] sample_seed=0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 병렬 시작 =====
+  [start] sample_seed=1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 병렬 시작 =====
+  [start] sample_seed=2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 병렬 시작 =====
+  [start] sample_seed=3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 병렬 시작 =====
+  [start] sample_seed=4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 병렬 시작 =====
+  [start] sample_seed=5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 병렬 시작 =====
+  [start] sample_seed=6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 병렬 시작 =====
+  [start] sample_seed=7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 병렬 시작 =====
+  [start] sample_seed=8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 병렬 시작 =====
+  [start] sample_seed=9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 병렬 시작 =====
+  [start] sample_seed=10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 병렬 시작 =====
+  [start] sample_seed=11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 병렬 시작 =====
+  [start] sample_seed=12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 병렬 시작 =====
+  [start] sample_seed=13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 병렬 시작 =====
+  [start] sample_seed=14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 병렬 시작 =====
+  [start] sample_seed=15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 병렬 시작 =====
+  [start] sample_seed=16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 병렬 시작 =====
+  [start] sample_seed=17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 병렬 시작 =====
+  [start] sample_seed=18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 병렬 시작 =====
+  [start] sample_seed=19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 병렬 시작 =====
+  [start] sample_seed=20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 병렬 시작 =====
+  [start] sample_seed=21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 병렬 시작 =====
+  [start] sample_seed=22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 병렬 시작 =====
+  [start] sample_seed=23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 병렬 시작 =====
+  [start] sample_seed=24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 병렬 시작 =====
+  [start] sample_seed=25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 병렬 시작 =====
+  [start] sample_seed=26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 병렬 시작 =====
+  [start] sample_seed=27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 병렬 시작 =====
+  [start] sample_seed=28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 병렬 시작 =====
+  [start] sample_seed=29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 병렬 시작 =====
+  [start] sample_seed=30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 병렬 시작 =====
+  [start] sample_seed=31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 병렬 시작 =====
+  [start] sample_seed=32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 병렬 시작 =====
+  [start] sample_seed=33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 병렬 시작 =====
+  [start] sample_seed=34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 병렬 시작 =====
+  [start] sample_seed=35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 병렬 시작 =====
+  [start] sample_seed=36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 병렬 시작 =====
+  [start] sample_seed=37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 병렬 시작 =====
+  [start] sample_seed=38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 병렬 시작 =====
+  [start] sample_seed=39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 병렬 시작 =====
+  [start] sample_seed=40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 병렬 시작 =====
+  [start] sample_seed=41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 병렬 시작 =====
+  [start] sample_seed=42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 병렬 시작 =====
+  [start] sample_seed=43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 병렬 시작 =====
+  [start] sample_seed=44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 병렬 시작 =====
+  [start] sample_seed=45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 병렬 시작 =====
+  [start] sample_seed=46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 병렬 시작 =====
+  [start] sample_seed=47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 병렬 시작 =====
+  [start] sample_seed=48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 병렬 시작 =====
+  [start] sample_seed=49
+===== batch 50 완료 =====
+
+===== batch 51: seed 50 ~ 50 병렬 시작 =====
+  [start] sample_seed=50
+===== batch 51 완료 =====
+
+===== batch 52: seed 51 ~ 51 병렬 시작 =====
+  [start] sample_seed=51
+===== batch 52 완료 =====
+
+===== batch 53: seed 52 ~ 52 병렬 시작 =====
+  [start] sample_seed=52
+===== batch 53 완료 =====
+
+===== batch 54: seed 53 ~ 53 병렬 시작 =====
+  [start] sample_seed=53
+===== batch 54 완료 =====
+
+===== batch 55: seed 54 ~ 54 병렬 시작 =====
+  [start] sample_seed=54
+===== batch 55 완료 =====
+
+===== batch 56: seed 55 ~ 55 병렬 시작 =====
+  [start] sample_seed=55
+===== batch 56 완료 =====
+
+===== batch 57: seed 56 ~ 56 병렬 시작 =====
+  [start] sample_seed=56
+===== batch 57 완료 =====
+
+===== batch 58: seed 57 ~ 57 병렬 시작 =====
+  [start] sample_seed=57
+===== batch 58 완료 =====
+
+===== batch 59: seed 58 ~ 58 병렬 시작 =====
+  [start] sample_seed=58
+===== batch 59 완료 =====
+
+===== batch 60: seed 59 ~ 59 병렬 시작 =====
+  [start] sample_seed=59
+===== batch 60 완료 =====
+
+===== batch 61: seed 60 ~ 60 병렬 시작 =====
+  [start] sample_seed=60
+===== batch 61 완료 =====
+
+===== batch 62: seed 61 ~ 61 병렬 시작 =====
+  [start] sample_seed=61
+===== batch 62 완료 =====
+
+===== batch 63: seed 62 ~ 62 병렬 시작 =====
+  [start] sample_seed=62
+===== batch 63 완료 =====
+
+===== batch 64: seed 63 ~ 63 병렬 시작 =====
+  [start] sample_seed=63
+===== batch 64 완료 =====
+
+===== batch 65: seed 64 ~ 64 병렬 시작 =====
+  [start] sample_seed=64
+===== batch 65 완료 =====
+
+===== batch 66: seed 65 ~ 65 병렬 시작 =====
+  [start] sample_seed=65
+===== batch 66 완료 =====
+
+===== batch 67: seed 66 ~ 66 병렬 시작 =====
+  [start] sample_seed=66
+===== batch 67 완료 =====
+
+===== batch 68: seed 67 ~ 67 병렬 시작 =====
+  [start] sample_seed=67
+===== batch 68 완료 =====
+
+===== batch 69: seed 68 ~ 68 병렬 시작 =====
+  [start] sample_seed=68
+===== batch 69 완료 =====
+
+===== batch 70: seed 69 ~ 69 병렬 시작 =====
+  [start] sample_seed=69
+===== batch 70 완료 =====
+
+===== batch 71: seed 70 ~ 70 병렬 시작 =====
+  [start] sample_seed=70
+===== batch 71 완료 =====
+
+===== batch 72: seed 71 ~ 71 병렬 시작 =====
+  [start] sample_seed=71
+===== batch 72 완료 =====
+
+===== batch 73: seed 72 ~ 72 병렬 시작 =====
+  [start] sample_seed=72
+===== batch 73 완료 =====
+
+===== batch 74: seed 73 ~ 73 병렬 시작 =====
+  [start] sample_seed=73
+===== batch 74 완료 =====
+
+===== batch 75: seed 74 ~ 74 병렬 시작 =====
+  [start] sample_seed=74
+===== batch 75 완료 =====
+
+===== batch 76: seed 75 ~ 75 병렬 시작 =====
+  [start] sample_seed=75
+===== batch 76 완료 =====
+
+===== batch 77: seed 76 ~ 76 병렬 시작 =====
+  [start] sample_seed=76
+===== batch 77 완료 =====
+
+===== batch 78: seed 77 ~ 77 병렬 시작 =====
+  [start] sample_seed=77
+===== batch 78 완료 =====
+
+===== batch 79: seed 78 ~ 78 병렬 시작 =====
+  [start] sample_seed=78
+===== batch 79 완료 =====
+
+===== batch 80: seed 79 ~ 79 병렬 시작 =====
+  [start] sample_seed=79
+===== batch 80 완료 =====
+
+===== batch 81: seed 80 ~ 80 병렬 시작 =====
+  [start] sample_seed=80
+===== batch 81 완료 =====
+
+===== batch 82: seed 81 ~ 81 병렬 시작 =====
+  [start] sample_seed=81
+===== batch 82 완료 =====
+
+===== batch 83: seed 82 ~ 82 병렬 시작 =====
+  [start] sample_seed=82
+===== batch 83 완료 =====
+
+===== batch 84: seed 83 ~ 83 병렬 시작 =====
+  [start] sample_seed=83
+===== batch 84 완료 =====
+
+===== batch 85: seed 84 ~ 84 병렬 시작 =====
+  [start] sample_seed=84
+===== batch 85 완료 =====
+
+===== batch 86: seed 85 ~ 85 병렬 시작 =====
+  [start] sample_seed=85
+===== batch 86 완료 =====
+
+===== batch 87: seed 86 ~ 86 병렬 시작 =====
+  [start] sample_seed=86
+===== batch 87 완료 =====
+
+===== batch 88: seed 87 ~ 87 병렬 시작 =====
+  [start] sample_seed=87
+===== batch 88 완료 =====
+
+===== batch 89: seed 88 ~ 88 병렬 시작 =====
+  [start] sample_seed=88
+===== batch 89 완료 =====
+
+===== batch 90: seed 89 ~ 89 병렬 시작 =====
+  [start] sample_seed=89
+===== batch 90 완료 =====
+
+===== batch 91: seed 90 ~ 90 병렬 시작 =====
+  [start] sample_seed=90
+===== batch 91 완료 =====
+
+===== batch 92: seed 91 ~ 91 병렬 시작 =====
+  [start] sample_seed=91
+===== batch 92 완료 =====
+
+===== batch 93: seed 92 ~ 92 병렬 시작 =====
+  [start] sample_seed=92
+===== batch 93 완료 =====
+
+===== batch 94: seed 93 ~ 93 병렬 시작 =====
+  [start] sample_seed=93
+===== batch 94 완료 =====
+
+===== batch 95: seed 94 ~ 94 병렬 시작 =====
+  [start] sample_seed=94
+===== batch 95 완료 =====
+
+===== batch 96: seed 95 ~ 95 병렬 시작 =====
+  [start] sample_seed=95
+===== batch 96 완료 =====
+
+===== batch 97: seed 96 ~ 96 병렬 시작 =====
+  [start] sample_seed=96
+===== batch 97 완료 =====
+
+===== batch 98: seed 97 ~ 97 병렬 시작 =====
+  [start] sample_seed=97
+===== batch 98 완료 =====
+
+===== batch 99: seed 98 ~ 98 병렬 시작 =====
+  [start] sample_seed=98
+===== batch 99 완료 =====
+
+===== batch 100: seed 99 ~ 99 병렬 시작 =====
+  [start] sample_seed=99
+===== batch 100 완료 =====
+
+===== 전체 종료 =====
+results root: runs/zscl_texture_all_methods_gpu1/adapter/prototype
+===== [Adapter] done method=prototype =====
+
+===== [Adapter] start method=teacher_uncertain =====
+ROOT_OUT=runs/zscl_texture_all_methods_gpu1/adapter/teacher_uncertain
+===== Visual-only CLIP-Adapter + ZSCL data-selection: 100 sample-seed (parallel=1) =====
+project root        : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_all_methods_wrappers
+CUDA_VISIBLE_DEVICES: 1
+ROOT_OUT            : runs/zscl_texture_all_methods_gpu1/adapter/teacher_uncertain
+SEED_START          : 0
+NUM_SAMPLE_SEEDS    : 100
+PARALLEL            : 1
+SELECTION_METHOD    : teacher_uncertain
+CANDIDATE_FACTOR    : 2
+
+===== batch 1: seed 0 ~ 0 병렬 시작 =====
+  [start] sample_seed=0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 병렬 시작 =====
+  [start] sample_seed=1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 병렬 시작 =====
+  [start] sample_seed=2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 병렬 시작 =====
+  [start] sample_seed=3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 병렬 시작 =====
+  [start] sample_seed=4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 병렬 시작 =====
+  [start] sample_seed=5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 병렬 시작 =====
+  [start] sample_seed=6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 병렬 시작 =====
+  [start] sample_seed=7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 병렬 시작 =====
+  [start] sample_seed=8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 병렬 시작 =====
+  [start] sample_seed=9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 병렬 시작 =====
+  [start] sample_seed=10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 병렬 시작 =====
+  [start] sample_seed=11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 병렬 시작 =====
+  [start] sample_seed=12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 병렬 시작 =====
+  [start] sample_seed=13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 병렬 시작 =====
+  [start] sample_seed=14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 병렬 시작 =====
+  [start] sample_seed=15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 병렬 시작 =====
+  [start] sample_seed=16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 병렬 시작 =====
+  [start] sample_seed=17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 병렬 시작 =====
+  [start] sample_seed=18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 병렬 시작 =====
+  [start] sample_seed=19
+  [경고] PID=2526679 비정상 종료
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 병렬 시작 =====
+  [start] sample_seed=20
+  [경고] PID=2538239 비정상 종료
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 병렬 시작 =====
+  [start] sample_seed=21
+  [경고] PID=2543289 비정상 종료
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 병렬 시작 =====
+  [start] sample_seed=22
+scripts/run_texture_adapter_zscl_100seeds_gpu1.sh: line 74: 2544673 Killed                  python train_blue_target_adapter_zscl.py --target-name texture --target-root /data/datasets/texture --preserve imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test --model ViT-B-32-quickgelu --pretrained openai --shots-list 1 2 4 8 16 --adapter-hidden-ratio 0.25 --adapter-alpha-init 0.6 --adapter-seed 777 --epochs 50 --eval-every 5 --lr 1e-5 --batch-size 32 --num-workers 2 --device cuda --seed 42 --sample-seed "${sample_seed}" --selection-method "${SELECTION_METHOD}" --selection-candidate-factor "${CANDIDATE_FACTOR}" --cache-features --output-dir "${OUT_DIR}" > "${OUT_DIR}/run.log" 2>&1
+  [경고] PID=2544673 비정상 종료
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 병렬 시작 =====
+  [start] sample_seed=23
+scripts/run_texture_adapter_zscl_100seeds_gpu1.sh: line 74: 2546848 Killed                  python train_blue_target_adapter_zscl.py --target-name texture --target-root /data/datasets/texture --preserve imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test --model ViT-B-32-quickgelu --pretrained openai --shots-list 1 2 4 8 16 --adapter-hidden-ratio 0.25 --adapter-alpha-init 0.6 --adapter-seed 777 --epochs 50 --eval-every 5 --lr 1e-5 --batch-size 32 --num-workers 2 --device cuda --seed 42 --sample-seed "${sample_seed}" --selection-method "${SELECTION_METHOD}" --selection-candidate-factor "${CANDIDATE_FACTOR}" --cache-features --output-dir "${OUT_DIR}" > "${OUT_DIR}/run.log" 2>&1
+  [경고] PID=2546848 비정상 종료
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 병렬 시작 =====
+  [start] sample_seed=24
+scripts/run_texture_adapter_zscl_100seeds_gpu1.sh: line 74: 2547765 Killed                  python train_blue_target_adapter_zscl.py --target-name texture --target-root /data/datasets/texture --preserve imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test --model ViT-B-32-quickgelu --pretrained openai --shots-list 1 2 4 8 16 --adapter-hidden-ratio 0.25 --adapter-alpha-init 0.6 --adapter-seed 777 --epochs 50 --eval-every 5 --lr 1e-5 --batch-size 32 --num-workers 2 --device cuda --seed 42 --sample-seed "${sample_seed}" --selection-method "${SELECTION_METHOD}" --selection-candidate-factor "${CANDIDATE_FACTOR}" --cache-features --output-dir "${OUT_DIR}" > "${OUT_DIR}/run.log" 2>&1
+  [경고] PID=2547765 비정상 종료
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 병렬 시작 =====
+  [start] sample_seed=25
+scripts/run_texture_adapter_zscl_100seeds_gpu1.sh: line 74: 2548832 Killed                  python train_blue_target_adapter_zscl.py --target-name texture --target-root /data/datasets/texture --preserve imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test --model ViT-B-32-quickgelu --pretrained openai --shots-list 1 2 4 8 16 --adapter-hidden-ratio 0.25 --adapter-alpha-init 0.6 --adapter-seed 777 --epochs 50 --eval-every 5 --lr 1e-5 --batch-size 32 --num-workers 2 --device cuda --seed 42 --sample-seed "${sample_seed}" --selection-method "${SELECTION_METHOD}" --selection-candidate-factor "${CANDIDATE_FACTOR}" --cache-features --output-dir "${OUT_DIR}" > "${OUT_DIR}/run.log" 2>&1
+  [경고] PID=2548832 비정상 종료
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 병렬 시작 =====
+  [start] sample_seed=26
+  [경고] PID=2549807 비정상 종료
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 병렬 시작 =====
+  [start] sample_seed=27
+Terminated
+===== [Adapter] done method=teacher_uncertain =====
+
+===== all Adapter methods done =====
+results: runs/zscl_texture_all_methods_gpu1/adapter

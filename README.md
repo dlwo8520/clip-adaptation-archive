@@ -74,3 +74,7 @@ No additional development is scheduled for this closed archive. Unverified quest
 - [한국어 안내](docs/GUIDE_KO.md) / [private upload commands](docs/UPLOAD.md)
 
 [Live experiment record index](docs/EXPERIMENT_INDEX.md) includes future registered experiments.
+
+## Browse by category
+
+[Categorized directory and file map](docs/CATEGORIES.md) describes every top-level item and each CLIP code, experiment-package and graph collection. Each folder guide links its purpose, evidence state and original sources.

@@ -1,0 +1,48 @@
+# Research artifact policy: track selected code, configs, analyses and evidence.
+# Keep datasets, model weights, generated images, caches and secrets outside Git.
+# See docs/PROVENANCE.md and provenance/excluded_files.csv for export decisions.
+# Model/data/environment artifacts; numeric summaries remain versioned.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+.bob_env/
+.render_deps/
+.cache/
+node_modules/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.npz
+*.npy
+*.pkl
+*.zip
+*.pid
+*.lock
+*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+generated/
+real_images/
+external-data/
+local-artifacts/
+new_runs/
+
+# Inflated evidence is disposable; edit the gzip source only by explicit replacement.
+/CLIP/실험완료/CoOp_lora_full_teacher/plots/lora_vs_random_vs_wc_3e-2/lora_random_wc_compare_flat.csv
+/CLIP/실험완료/CoOp_twoteacher_selected_wc/plots/wc_lambda_sweep_epoch5/wc_lambda_sweep_flat.csv
+/CLIP/실험완료/CoOp_twoteacher_selected_wc/runs/twoteacher_vs_random_wc_1e-4/flat_accuracy_compare.csv
+/CLIP/실험완료/CoOp_twoteacher_selected_wc/runs/wc_lambda_sweep_plots/wc_lambda_sweep_flat.csv
+/CLIP/실험완료/ZSCL_DataSelection_entropy_only/logs/teacher_entropy_gpu4_seed0_99_parallel1.log
+/CLIP/실험완료/CoOp/texture_100seeds_master.log
+/CLIP/실험완료/CoOp_twoteacher_selected/runs/twoteacher_vs_random_plots/flat_accuracy_compare.csv
+/CLIP/실험완료/ZSCL_DataSelection_all_methods_wrappers/coop_teacher_uncertain_100seeds_gpu1.log
+/CLIP/코드/CoOp_js_tradeoff/plots/js_tradeoff_texture_diag_with_random100/js_tradeoff_flat.csv
+/CLIP/코드/CoOp_twoteacher_selected/runs/twoteacher_vs_random_plots/flat_accuracy_compare.csv
+/CLIP/코드/CoOp/texture_100seeds_master.log
+/CLIP/코드/ZSCL_DataSelection_all_methods_wrappers/coop_teacher_uncertain_100seeds_gpu1.log

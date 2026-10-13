@@ -1,0 +1,331 @@
+{
+  "args": {
+    "target_name": "texture",
+    "target_root": "/data/datasets/texture",
+    "target_train": null,
+    "target_test": null,
+    "target_classnames": null,
+    "split_test_ratio": 0.5,
+    "preserve": [
+      "imagenet:/data/datasets/imagenet_1k/val",
+      "cifar100:/data/datasets/cifar100/test"
+    ],
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "openai",
+    "shots_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "n_ctx": 16,
+    "epochs": 50,
+    "eval_every": 5,
+    "lr": 0.002,
+    "weight_decay": 0.0,
+    "batch_size": 128,
+    "num_workers": 2,
+    "device": "cuda",
+    "seed": 42,
+    "prompt_seed": 777,
+    "sample_seed": 56,
+    "max_eval_samples": -1,
+    "cache_features": true,
+    "output_dir": "runs/zscl_coop_textdrift/sample_seed_56",
+    "selection_method": "text_drift",
+    "selection_candidate_factor": 2,
+    "text_drift_vocab_file": null,
+    "text_drift_vocab_size": 1000,
+    "text_drift_vocab_seed": 12345,
+    "text_drift_step_size": 0.01,
+    "text_drift_templates": "default",
+    "text_drift_chunk_size": 1024
+  },
+  "target_name": "texture",
+  "split_mode": "auto_classwise_split",
+  "preserve_info": {
+    "imagenet": {
+      "path": "/data/datasets/imagenet_1k/val",
+      "num_classes": 1000,
+      "num_images": 5000
+    },
+    "cifar100": {
+      "path": "/data/datasets/cifar100/test",
+      "num_classes": 100,
+      "num_images": 10000
+    }
+  },
+  "zero_shot_baselines": {
+    "target": {
+      "accuracy": 0.424822695035461,
+      "correct": 1198,
+      "total": 2820
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.605,
+        "correct": 3025,
+        "total": 5000
+      },
+      "cifar100": {
+        "accuracy": 0.6493,
+        "correct": 6493,
+        "total": 10000
+      }
+    }
+  },
+  "prompt_init": {
+    "prompt_seed": 777,
+    "same_initial_context_across_shots": true,
+    "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+    "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+  },
+  "shots": [
+    {
+      "sample_seed": 56,
+      "shot": 1,
+      "fewshot_train_images": 47,
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4482269503546099,
+          "correct": 1264,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.023404255319148914
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4924,
+            "correct": 2462,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.11259999999999998
+          },
+          "cifar100": {
+            "accuracy": 0.5788,
+            "correct": 5788,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.07050000000000001
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.23758231103420258,
+          "train_acc": 1.0,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "history_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_1/history.json",
+      "checkpoint_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_1/coop_prompt_final.pt"
+    },
+    {
+      "sample_seed": 56,
+      "shot": 2,
+      "fewshot_train_images": 94,
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4673758865248227,
+          "correct": 1318,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.04255319148936171
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4974,
+            "correct": 2487,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.10759999999999997
+          },
+          "cifar100": {
+            "accuracy": 0.5123,
+            "correct": 5123,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.137
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.5740302205085754,
+          "train_acc": 0.8829787234042553,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "history_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_2/history.json",
+      "checkpoint_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_2/coop_prompt_final.pt"
+    },
+    {
+      "sample_seed": 56,
+      "shot": 4,
+      "fewshot_train_images": 188,
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5414893617021277,
+          "correct": 1527,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.1166666666666667
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4914,
+            "correct": 2457,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.11359999999999998
+          },
+          "cifar100": {
+            "accuracy": 0.5415,
+            "correct": 5415,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.1078
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.32389346018750614,
+          "train_acc": 0.9680851063829787,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "history_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_4/history.json",
+      "checkpoint_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_4/coop_prompt_final.pt"
+    },
+    {
+      "sample_seed": 56,
+      "shot": 8,
+      "fewshot_train_images": 376,
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5925531914893617,
+          "correct": 1671,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.1677304964539007
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4942,
+            "correct": 2471,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.11080000000000001
+          },
+          "cifar100": {
+            "accuracy": 0.5726,
+            "correct": 5726,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.07669999999999999
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.3268885802715383,
+          "train_acc": 0.9521276595744681,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "history_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_8/history.json",
+      "checkpoint_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_8/coop_prompt_final.pt"
+    },
+    {
+      "sample_seed": 56,
+      "shot": 16,
+      "fewshot_train_images": 752,
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.624468085106383,
+          "correct": 1761,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.19964539007092197
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.4104,
+            "correct": 2052,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.1946
+          },
+          "cifar100": {
+            "accuracy": 0.5226,
+            "correct": 5226,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.12670000000000003
+          }
+        },
+        "sample_seed": 56,
+        "split_seed": 42,
+        "prompt_seed": 777,
+        "train": {
+          "train_loss": 0.379581777339286,
+          "train_acc": 0.9175531914893617,
+          "lr": 0.0
+        },
+        "prompt_init": {
+          "prompt_seed": 777,
+          "same_initial_context_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+          "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+        }
+      },
+      "history_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_16/history.json",
+      "checkpoint_path": "runs/zscl_coop_textdrift/sample_seed_56/shot_16/coop_prompt_final.pt"
+    }
+  ]
+}

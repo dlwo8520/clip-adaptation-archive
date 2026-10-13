@@ -1,0 +1,5 @@
+case,title,selected_seed,selection_epoch,target_accuracy,imagenet_accuracy,cifar100_accuracy,preserve_avg_accuracy
+best_target,Best Target Accuracy,17,50,0.6202127659574468,0.5258,0.5878,0.5568
+best_imagenet,Best ImageNet Preserve Accuracy,40,50,0.5464539007092198,0.582,0.6383,0.61015
+best_cifar100,Best CIFAR Preserve Accuracy,24,50,0.5670212765957446,0.5606,0.6402,0.6004
+best_preserve_avg,Best Average Preserve Accuracy,40,50,0.5464539007092198,0.582,0.6383,0.61015

@@ -1,0 +1,5 @@
+case,title,selected_seed,selection_epoch,target_accuracy,imagenet_accuracy,cifar100_accuracy,preserve_avg_accuracy
+best_target,Best Target DTD Accuracy,99,50,0.6609929078014184,0.4078,0.5163,0.46204999999999996
+best_imagenet,Best ImageNet Preserve Accuracy,66,50,0.6294326241134752,0.479,0.5696,0.5243
+best_cifar100,Best CIFAR100 Preserve Accuracy,29,50,0.6443262411347518,0.4788,0.5764,0.5276000000000001
+best_preserve_avg,Best Average Preserve Accuracy,29,50,0.6443262411347518,0.4788,0.5764,0.5276000000000001

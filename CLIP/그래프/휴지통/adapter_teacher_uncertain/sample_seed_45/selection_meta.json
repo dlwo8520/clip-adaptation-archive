@@ -1,0 +1,8 @@
+{
+  "selection_method": "teacher_uncertain",
+  "selection_candidate_factor": 2,
+  "num_images": 2820,
+  "mean_confidence": 0.2884826958179474,
+  "mean_margin": 0.07055845111608505,
+  "note": "Teacher CLIP zero-shot 결과 기반 support sample 선택."
+}

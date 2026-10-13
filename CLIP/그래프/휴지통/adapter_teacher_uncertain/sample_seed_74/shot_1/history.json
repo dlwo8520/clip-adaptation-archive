@@ -1,0 +1,651 @@
+[
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 0,
+    "target": {
+      "accuracy": 0.424822695035461,
+      "correct": 1198,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.0
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.605,
+        "correct": 3025,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": 0.0
+      },
+      "cifar100": {
+        "accuracy": 0.6493,
+        "correct": 6493,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": 0.0
+      }
+    },
+    "train": {
+      "train_loss": null,
+      "train_acc": null,
+      "lr": 1e-05,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "note": "epoch 0은 adapter 적용 전 원본 CLIP zero-shot 결과임"
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 1,
+    "target": {
+      "accuracy": 0.40425531914893614,
+      "correct": 1140,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.020567375886524852
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5604,
+        "correct": 2802,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04459999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.6188,
+        "correct": 6188,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03049999999999997
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.91038693265712,
+      "train_acc": 0.23404255319148937,
+      "lr": 9.990133642141359e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 5,
+    "target": {
+      "accuracy": 0.4049645390070922,
+      "correct": 1142,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.019858156028368823
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5606,
+        "correct": 2803,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.044399999999999995
+      },
+      "cifar100": {
+        "accuracy": 0.6189,
+        "correct": 6189,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.030399999999999983
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.9066792143152114,
+      "train_acc": 0.23404255319148937,
+      "lr": 9.755282581475769e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 10,
+    "target": {
+      "accuracy": 0.4053191489361702,
+      "correct": 1143,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.01950354609929078
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5606,
+        "correct": 2803,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.044399999999999995
+      },
+      "cifar100": {
+        "accuracy": 0.6185,
+        "correct": 6185,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03079999999999994
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.8978030326518605,
+      "train_acc": 0.2553191489361702,
+      "lr": 9.045084971874738e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 15,
+    "target": {
+      "accuracy": 0.4067375886524823,
+      "correct": 1147,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.018085106382978722
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5604,
+        "correct": 2802,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04459999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.6184,
+        "correct": 6184,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03090000000000004
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.888239956916647,
+      "train_acc": 0.2553191489361702,
+      "lr": 7.938926261462368e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 20,
+    "target": {
+      "accuracy": 0.4078014184397163,
+      "correct": 1150,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.017021276595744705
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5612,
+        "correct": 2806,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04379999999999995
+      },
+      "cifar100": {
+        "accuracy": 0.6185,
+        "correct": 6185,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03079999999999994
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.879716228931508,
+      "train_acc": 0.2553191489361702,
+      "lr": 6.545084971874738e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 25,
+    "target": {
+      "accuracy": 0.40815602836879433,
+      "correct": 1151,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.016666666666666663
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5614,
+        "correct": 2807,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04359999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.6184,
+        "correct": 6184,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03090000000000004
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.873093640550654,
+      "train_acc": 0.2553191489361702,
+      "lr": 5.000000000000001e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 30,
+    "target": {
+      "accuracy": 0.40886524822695036,
+      "correct": 1153,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.015957446808510634
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.562,
+        "correct": 2810,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04299999999999993
+      },
+      "cifar100": {
+        "accuracy": 0.6184,
+        "correct": 6184,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03090000000000004
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.8680161770353925,
+      "train_acc": 0.2553191489361702,
+      "lr": 3.4549150281252656e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 35,
+    "target": {
+      "accuracy": 0.4095744680851064,
+      "correct": 1155,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.015248226950354604
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.562,
+        "correct": 2810,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04299999999999993
+      },
+      "cifar100": {
+        "accuracy": 0.6186,
+        "correct": 6186,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03069999999999995
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.864635092146853,
+      "train_acc": 0.2553191489361702,
+      "lr": 2.0610737385376354e-06,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 40,
+    "target": {
+      "accuracy": 0.4095744680851064,
+      "correct": 1155,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.015248226950354604
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5624,
+        "correct": 2812,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04259999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.6185,
+        "correct": 6185,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03079999999999994
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.8626919807271753,
+      "train_acc": 0.2553191489361702,
+      "lr": 9.549150281252637e-07,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 45,
+    "target": {
+      "accuracy": 0.40921985815602835,
+      "correct": 1154,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.015602836879432647
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5622,
+        "correct": 2811,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04279999999999995
+      },
+      "cifar100": {
+        "accuracy": 0.6185,
+        "correct": 6185,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03079999999999994
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.8618603919414762,
+      "train_acc": 0.2553191489361702,
+      "lr": 2.447174185242325e-07,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 1,
+    "epoch": 50,
+    "target": {
+      "accuracy": 0.40921985815602835,
+      "correct": 1154,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.015602836879432647
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5622,
+        "correct": 2811,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.04279999999999995
+      },
+      "cifar100": {
+        "accuracy": 0.6185,
+        "correct": 6185,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.03079999999999994
+      }
+    },
+    "sample_seed": 74,
+    "split_seed": 42,
+    "adapter_seed": 777,
+    "trainer": "CLIPAdapterVisualOnly",
+    "selection_method": "teacher_uncertain",
+    "selection_candidate_factor": 2,
+    "train": {
+      "train_loss": 2.861681674389129,
+      "train_acc": 0.2553191489361702,
+      "lr": 0.0,
+      "alpha_visual": 0.6000000238418579
+    },
+    "adapter_init": {
+      "trainer": "CLIPAdapterVisualOnly",
+      "adapter_seed": 777,
+      "feature_dim": 512,
+      "hidden_ratio": 0.25,
+      "alpha_init": 0.6,
+      "alpha_learnable": false,
+      "branches": [
+        "visual"
+      ],
+      "text_adapter": false,
+      "same_initial_adapter_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+      "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+    }
+  }
+]

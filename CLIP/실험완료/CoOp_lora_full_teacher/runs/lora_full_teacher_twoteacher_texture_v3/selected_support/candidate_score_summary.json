@@ -1,0 +1,10 @@
+{
+  "num_candidates": 2820,
+  "score_mean": 1.710007905960083,
+  "score_std": 0.6261848211288452,
+  "score_min": 0.4076867699623108,
+  "score_max": 2.998664617538452,
+  "original_clip_train_pool_accuracy": 0.4351063829787234,
+  "lora_teacher_train_pool_accuracy": 0.9921985815602837,
+  "both_correct_rate": 0.4351063829787234
+}

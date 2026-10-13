@@ -1,0 +1,15 @@
+{
+  "trainer": "CLIPAdapterVisualOnly",
+  "adapter_seed": 777,
+  "feature_dim": 512,
+  "hidden_ratio": 0.25,
+  "alpha_init": 0.6,
+  "alpha_learnable": false,
+  "branches": [
+    "visual"
+  ],
+  "text_adapter": false,
+  "same_initial_adapter_across_shots": true,
+  "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+  "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+}

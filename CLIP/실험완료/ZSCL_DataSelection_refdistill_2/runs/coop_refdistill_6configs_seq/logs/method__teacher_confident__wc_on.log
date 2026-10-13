@@ -1,0 +1,422 @@
+===== run_coop_refdistill_one_config.sh =====
+ROOT_OUT             : runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on
+SELECTION_METHOD     : teacher_confident
+USE_WC               : on (effective lambda_wc=0.1)
+LAMBDA_DISTILL       : 1.0
+SEED_START           : 0
+NUM_SAMPLE_SEEDS     : 100
+PARALLEL             : 1
+TARGET_NAME          : texture
+TARGET_ROOT          : /data/datasets/texture
+REFERENCE_NAME       : imagenet
+REFERENCE_ROOT       : /data/datasets/imagenet_1k/val
+PRESERVE_SPECS       : imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test
+GPU_ID               : 1
+EPOCHS               : 50
+EVAL_EVERY           : 5
+SHOTS_LIST           : 1 2 4 8 16
+MAX_REFERENCE_IMAGES : 10000
+DISTILL_NUM_IMG      : 64
+DISTILL_NUM_CLS      : 64
+
+===== batch 1: seed 0 ~ 0 시작 =====
+  [start] sample_seed=0 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 시작 =====
+  [start] sample_seed=1 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 시작 =====
+  [start] sample_seed=2 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 시작 =====
+  [start] sample_seed=3 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 시작 =====
+  [start] sample_seed=4 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 시작 =====
+  [start] sample_seed=5 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 시작 =====
+  [start] sample_seed=6 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 시작 =====
+  [start] sample_seed=7 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 시작 =====
+  [start] sample_seed=8 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 시작 =====
+  [start] sample_seed=9 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 시작 =====
+  [start] sample_seed=10 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 시작 =====
+  [start] sample_seed=11 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 시작 =====
+  [start] sample_seed=12 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 시작 =====
+  [start] sample_seed=13 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 시작 =====
+  [start] sample_seed=14 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 시작 =====
+  [start] sample_seed=15 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 시작 =====
+  [start] sample_seed=16 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 시작 =====
+  [start] sample_seed=17 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 시작 =====
+  [start] sample_seed=18 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 시작 =====
+  [start] sample_seed=19 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 시작 =====
+  [start] sample_seed=20 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 시작 =====
+  [start] sample_seed=21 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 시작 =====
+  [start] sample_seed=22 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 시작 =====
+  [start] sample_seed=23 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 시작 =====
+  [start] sample_seed=24 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 시작 =====
+  [start] sample_seed=25 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 시작 =====
+  [start] sample_seed=26 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 시작 =====
+  [start] sample_seed=27 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 시작 =====
+  [start] sample_seed=28 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 시작 =====
+  [start] sample_seed=29 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 시작 =====
+  [start] sample_seed=30 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 시작 =====
+  [start] sample_seed=31 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 시작 =====
+  [start] sample_seed=32 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 시작 =====
+  [start] sample_seed=33 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 시작 =====
+  [start] sample_seed=34 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 시작 =====
+  [start] sample_seed=35 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 시작 =====
+  [start] sample_seed=36 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 시작 =====
+  [start] sample_seed=37 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 시작 =====
+  [start] sample_seed=38 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 시작 =====
+  [start] sample_seed=39 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 시작 =====
+  [start] sample_seed=40 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 시작 =====
+  [start] sample_seed=41 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 시작 =====
+  [start] sample_seed=42 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 시작 =====
+  [start] sample_seed=43 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 시작 =====
+  [start] sample_seed=44 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 시작 =====
+  [start] sample_seed=45 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 시작 =====
+  [start] sample_seed=46 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 시작 =====
+  [start] sample_seed=47 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 시작 =====
+  [start] sample_seed=48 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 시작 =====
+  [start] sample_seed=49 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_49
+===== batch 50 완료 =====
+
+===== batch 51: seed 50 ~ 50 시작 =====
+  [start] sample_seed=50 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_50
+===== batch 51 완료 =====
+
+===== batch 52: seed 51 ~ 51 시작 =====
+  [start] sample_seed=51 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_51
+===== batch 52 완료 =====
+
+===== batch 53: seed 52 ~ 52 시작 =====
+  [start] sample_seed=52 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_52
+===== batch 53 완료 =====
+
+===== batch 54: seed 53 ~ 53 시작 =====
+  [start] sample_seed=53 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_53
+===== batch 54 완료 =====
+
+===== batch 55: seed 54 ~ 54 시작 =====
+  [start] sample_seed=54 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_54
+===== batch 55 완료 =====
+
+===== batch 56: seed 55 ~ 55 시작 =====
+  [start] sample_seed=55 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_55
+===== batch 56 완료 =====
+
+===== batch 57: seed 56 ~ 56 시작 =====
+  [start] sample_seed=56 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_56
+===== batch 57 완료 =====
+
+===== batch 58: seed 57 ~ 57 시작 =====
+  [start] sample_seed=57 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_57
+===== batch 58 완료 =====
+
+===== batch 59: seed 58 ~ 58 시작 =====
+  [start] sample_seed=58 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_58
+===== batch 59 완료 =====
+
+===== batch 60: seed 59 ~ 59 시작 =====
+  [start] sample_seed=59 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_59
+===== batch 60 완료 =====
+
+===== batch 61: seed 60 ~ 60 시작 =====
+  [start] sample_seed=60 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_60
+===== batch 61 완료 =====
+
+===== batch 62: seed 61 ~ 61 시작 =====
+  [start] sample_seed=61 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_61
+===== batch 62 완료 =====
+
+===== batch 63: seed 62 ~ 62 시작 =====
+  [start] sample_seed=62 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_62
+===== batch 63 완료 =====
+
+===== batch 64: seed 63 ~ 63 시작 =====
+  [start] sample_seed=63 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_63
+===== batch 64 완료 =====
+
+===== batch 65: seed 64 ~ 64 시작 =====
+  [start] sample_seed=64 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_64
+===== batch 65 완료 =====
+
+===== batch 66: seed 65 ~ 65 시작 =====
+  [start] sample_seed=65 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_65
+===== batch 66 완료 =====
+
+===== batch 67: seed 66 ~ 66 시작 =====
+  [start] sample_seed=66 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_66
+===== batch 67 완료 =====
+
+===== batch 68: seed 67 ~ 67 시작 =====
+  [start] sample_seed=67 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_67
+===== batch 68 완료 =====
+
+===== batch 69: seed 68 ~ 68 시작 =====
+  [start] sample_seed=68 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_68
+===== batch 69 완료 =====
+
+===== batch 70: seed 69 ~ 69 시작 =====
+  [start] sample_seed=69 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_69
+===== batch 70 완료 =====
+
+===== batch 71: seed 70 ~ 70 시작 =====
+  [start] sample_seed=70 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_70
+===== batch 71 완료 =====
+
+===== batch 72: seed 71 ~ 71 시작 =====
+  [start] sample_seed=71 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_71
+===== batch 72 완료 =====
+
+===== batch 73: seed 72 ~ 72 시작 =====
+  [start] sample_seed=72 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_72
+===== batch 73 완료 =====
+
+===== batch 74: seed 73 ~ 73 시작 =====
+  [start] sample_seed=73 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_73
+===== batch 74 완료 =====
+
+===== batch 75: seed 74 ~ 74 시작 =====
+  [start] sample_seed=74 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_74
+===== batch 75 완료 =====
+
+===== batch 76: seed 75 ~ 75 시작 =====
+  [start] sample_seed=75 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_75
+===== batch 76 완료 =====
+
+===== batch 77: seed 76 ~ 76 시작 =====
+  [start] sample_seed=76 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_76
+===== batch 77 완료 =====
+
+===== batch 78: seed 77 ~ 77 시작 =====
+  [start] sample_seed=77 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_77
+===== batch 78 완료 =====
+
+===== batch 79: seed 78 ~ 78 시작 =====
+  [start] sample_seed=78 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_78
+===== batch 79 완료 =====
+
+===== batch 80: seed 79 ~ 79 시작 =====
+  [start] sample_seed=79 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_79
+===== batch 80 완료 =====
+
+===== batch 81: seed 80 ~ 80 시작 =====
+  [start] sample_seed=80 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_80
+===== batch 81 완료 =====
+
+===== batch 82: seed 81 ~ 81 시작 =====
+  [start] sample_seed=81 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_81
+===== batch 82 완료 =====
+
+===== batch 83: seed 82 ~ 82 시작 =====
+  [start] sample_seed=82 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_82
+===== batch 83 완료 =====
+
+===== batch 84: seed 83 ~ 83 시작 =====
+  [start] sample_seed=83 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_83
+===== batch 84 완료 =====
+
+===== batch 85: seed 84 ~ 84 시작 =====
+  [start] sample_seed=84 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_84
+===== batch 85 완료 =====
+
+===== batch 86: seed 85 ~ 85 시작 =====
+  [start] sample_seed=85 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_85
+===== batch 86 완료 =====
+
+===== batch 87: seed 86 ~ 86 시작 =====
+  [start] sample_seed=86 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_86
+===== batch 87 완료 =====
+
+===== batch 88: seed 87 ~ 87 시작 =====
+  [start] sample_seed=87 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_87
+===== batch 88 완료 =====
+
+===== batch 89: seed 88 ~ 88 시작 =====
+  [start] sample_seed=88 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_88
+===== batch 89 완료 =====
+
+===== batch 90: seed 89 ~ 89 시작 =====
+  [start] sample_seed=89 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_89
+===== batch 90 완료 =====
+
+===== batch 91: seed 90 ~ 90 시작 =====
+  [start] sample_seed=90 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_90
+===== batch 91 완료 =====
+
+===== batch 92: seed 91 ~ 91 시작 =====
+  [start] sample_seed=91 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_91
+===== batch 92 완료 =====
+
+===== batch 93: seed 92 ~ 92 시작 =====
+  [start] sample_seed=92 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_92
+===== batch 93 완료 =====
+
+===== batch 94: seed 93 ~ 93 시작 =====
+  [start] sample_seed=93 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_93
+===== batch 94 완료 =====
+
+===== batch 95: seed 94 ~ 94 시작 =====
+  [start] sample_seed=94 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_94
+===== batch 95 완료 =====
+
+===== batch 96: seed 95 ~ 95 시작 =====
+  [start] sample_seed=95 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_95
+===== batch 96 완료 =====
+
+===== batch 97: seed 96 ~ 96 시작 =====
+  [start] sample_seed=96 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_96
+===== batch 97 완료 =====
+
+===== batch 98: seed 97 ~ 97 시작 =====
+  [start] sample_seed=97 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_97
+===== batch 98 완료 =====
+
+===== batch 99: seed 98 ~ 98 시작 =====
+  [start] sample_seed=98 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_98
+===== batch 99 완료 =====
+
+===== batch 100: seed 99 ~ 99 시작 =====
+  [start] sample_seed=99 -> runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on/sample_seed_99
+===== batch 100 완료 =====
+
+===== runs/coop_refdistill_6configs_seq/method__teacher_confident__wc_on 의 모든 seed 종료 =====

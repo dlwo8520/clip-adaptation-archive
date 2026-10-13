@@ -1,0 +1,33 @@
+cuda available: True
+visible device count: 1
+visible device 0: NVIDIA RTX A6000
+===== 실행 정보 =====
+device: cuda
+CUDA_VISIBLE_DEVICES: 1
+visible cuda device count: 1
+visible cuda device 0: NVIDIA RTX A6000
+===== target 정보 =====
+target_name: cifar10_smoke
+split_mode: explicit_train_test
+target classes: 10
+target train pool images: 50000
+target test images: 256
+===== preserve 정보 =====
+cifar100 {'path': '/data/datasets/cifar100/test', 'num_classes': 100, 'num_images': 256}
+===== 원본 CLIP zero-shot baseline 측정 =====
+zero-shot target=cifar10_smoke:   0%|          | 0/4 [00:00<?, ?it/s]zero-shot target=cifar10_smoke:  25%|██▌       | 1/4 [00:00<00:01,  2.13it/s]zero-shot target=cifar10_smoke: 100%|██████████| 4/4 [00:00<00:00,  8.25it/s]zero-shot target=cifar10_smoke: 100%|██████████| 4/4 [00:00<00:00,  6.44it/s]
+zero-shot preserve=cifar100:   0%|          | 0/4 [00:00<?, ?it/s]zero-shot preserve=cifar100:  25%|██▌       | 1/4 [00:00<00:00,  4.04it/s]zero-shot preserve=cifar100:  75%|███████▌  | 3/4 [00:00<00:00,  8.59it/s]zero-shot preserve=cifar100: 100%|██████████| 4/4 [00:00<00:00,  8.76it/s]
+===== zero-shot baseline 요약 =====
+target cifar10_smoke: 91.41%
+preserve cifar100: 70.70%
+===== image feature 캐시 생성 =====
+cache target=cifar10_smoke:   0%|          | 0/4 [00:00<?, ?it/s]cache target=cifar10_smoke:  25%|██▌       | 1/4 [00:00<00:00,  4.65it/s]cache target=cifar10_smoke:  75%|███████▌  | 3/4 [00:00<00:00,  9.07it/s]cache target=cifar10_smoke: 100%|██████████| 4/4 [00:00<00:00,  9.25it/s]
+cache preserve=cifar100:   0%|          | 0/4 [00:00<?, ?it/s]cache preserve=cifar100:  25%|██▌       | 1/4 [00:00<00:00,  4.45it/s]cache preserve=cifar100:  75%|███████▌  | 3/4 [00:00<00:00,  8.88it/s]cache preserve=cifar100: 100%|██████████| 4/4 [00:00<00:00,  9.00it/s]
+===== 공통 CoOp prompt 초기값 생성 =====
+prompt_seed: 777
+===== shot=1 CoOp 학습 시작 =====
+train epoch 1/1:   0%|          | 0/1 [00:00<?, ?it/s]train epoch 1/1:   0%|          | 0/1 [00:00<?, ?it/s, acc=1.0000, loss=0.9428]train epoch 1/1: 100%|██████████| 1/1 [00:00<00:00,  3.17it/s, acc=1.0000, loss=0.9428]train epoch 1/1: 100%|██████████| 1/1 [00:00<00:00,  2.91it/s, acc=1.0000, loss=0.9428]
+===== 실험 종료 =====
+output_dir: runs/smoke_gpu1
+results: runs/smoke_gpu1/results.json
+curves: runs/smoke_gpu1/curves.jsonl

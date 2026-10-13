@@ -1,0 +1,504 @@
+[
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 0,
+    "target": {
+      "accuracy": 0.424822695035461,
+      "correct": 1198,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.0
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.605,
+        "correct": 3025,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": 0.0
+      },
+      "cifar100": {
+        "accuracy": 0.6493,
+        "correct": 6493,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": 0.0
+      }
+    },
+    "train": {
+      "train_loss": null,
+      "train_acc": null,
+      "lr": 0.002
+    },
+    "prompt_init": {
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "note": "epoch 0 is copied from zero_shot_baselines.json, not evaluated with CoOp initialized prompt"
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 1,
+    "target": {
+      "accuracy": 0.34929078014184395,
+      "correct": 985,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.07553191489361705
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.357,
+        "correct": 1785,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.248
+      },
+      "cifar100": {
+        "accuracy": 0.4562,
+        "correct": 4562,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.1931
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 3.232699475389846,
+      "train_acc": 0.23404255319148937,
+      "lr": 0.0019980267284282717
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 5,
+    "target": {
+      "accuracy": 0.3982269503546099,
+      "correct": 1123,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": -0.026595744680851074
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.3684,
+        "correct": 1842,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.23659999999999998
+      },
+      "cifar100": {
+        "accuracy": 0.4948,
+        "correct": 4948,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.15449999999999997
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 2.4498631954193115,
+      "train_acc": 0.3617021276595745,
+      "lr": 0.0019510565162951538
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 10,
+    "target": {
+      "accuracy": 0.45354609929078016,
+      "correct": 1279,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.028723404255319163
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5054,
+        "correct": 2527,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.09960000000000002
+      },
+      "cifar100": {
+        "accuracy": 0.5748,
+        "correct": 5748,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.07450000000000001
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 1.7432790081551734,
+      "train_acc": 0.526595744680851,
+      "lr": 0.0018090169943749473
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 15,
+    "target": {
+      "accuracy": 0.49432624113475176,
+      "correct": 1394,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.06950354609929077
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5352,
+        "correct": 2676,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.06979999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.5869,
+        "correct": 5869,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.06240000000000001
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 1.4481859587608499,
+      "train_acc": 0.6223404255319149,
+      "lr": 0.0015877852522924731
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 20,
+    "target": {
+      "accuracy": 0.5120567375886524,
+      "correct": 1444,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08723404255319145
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5246,
+        "correct": 2623,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.08040000000000003
+      },
+      "cifar100": {
+        "accuracy": 0.572,
+        "correct": 5720,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.07730000000000004
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 1.124645821591641,
+      "train_acc": 0.675531914893617,
+      "lr": 0.001309016994374947
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 25,
+    "target": {
+      "accuracy": 0.5127659574468085,
+      "correct": 1446,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08794326241134753
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5042,
+        "correct": 2521,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.1008
+      },
+      "cifar100": {
+        "accuracy": 0.5582,
+        "correct": 5582,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09109999999999996
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.8753228529970697,
+      "train_acc": 0.7393617021276596,
+      "lr": 0.0009999999999999996
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 30,
+    "target": {
+      "accuracy": 0.5127659574468085,
+      "correct": 1446,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08794326241134753
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.4988,
+        "correct": 2494,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.10619999999999996
+      },
+      "cifar100": {
+        "accuracy": 0.5553,
+        "correct": 5553,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09399999999999997
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.7240387036445293,
+      "train_acc": 0.8138297872340425,
+      "lr": 0.0006909830056250527
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 35,
+    "target": {
+      "accuracy": 0.5127659574468085,
+      "correct": 1446,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08794326241134753
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5044,
+        "correct": 2522,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.10060000000000002
+      },
+      "cifar100": {
+        "accuracy": 0.5552,
+        "correct": 5552,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09409999999999996
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.6214310856575661,
+      "train_acc": 0.8617021276595744,
+      "lr": 0.00041221474770752675
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 40,
+    "target": {
+      "accuracy": 0.5092198581560283,
+      "correct": 1436,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08439716312056733
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.4994,
+        "correct": 2497,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.10559999999999997
+      },
+      "cifar100": {
+        "accuracy": 0.5529,
+        "correct": 5529,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09640000000000004
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.561367356396736,
+      "train_acc": 0.8882978723404256,
+      "lr": 0.00019098300562505252
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 45,
+    "target": {
+      "accuracy": 0.5109929078014185,
+      "correct": 1441,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08617021276595749
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5022,
+        "correct": 2511,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.1028
+      },
+      "cifar100": {
+        "accuracy": 0.5498,
+        "correct": 5498,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09950000000000003
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.5358374023691137,
+      "train_acc": 0.8936170212765957,
+      "lr": 4.8943483704846436e-05
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  },
+  {
+    "target_name": "texture",
+    "shot": 4,
+    "epoch": 50,
+    "target": {
+      "accuracy": 0.5099290780141844,
+      "correct": 1438,
+      "total": 2820,
+      "zero_shot_baseline": 0.424822695035461,
+      "delta_from_zero_shot": 0.08510638297872342
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.5016,
+        "correct": 2508,
+        "total": 5000,
+        "zero_shot_baseline": 0.605,
+        "delta_from_zero_shot": -0.10339999999999994
+      },
+      "cifar100": {
+        "accuracy": 0.5507,
+        "correct": 5507,
+        "total": 10000,
+        "zero_shot_baseline": 0.6493,
+        "delta_from_zero_shot": -0.09860000000000002
+      }
+    },
+    "sample_seed": 75,
+    "split_seed": 42,
+    "prompt_seed": 777,
+    "train": {
+      "train_loss": 0.5276933927485283,
+      "train_acc": 0.898936170212766,
+      "lr": 0.0
+    },
+    "prompt_init": {
+      "prompt_seed": 777,
+      "same_initial_context_across_shots": true,
+      "epoch_0_meaning": "original CLIP zero-shot baseline before CoOp adaptation",
+      "epoch_1_and_after": "CoOp prompt after target few-shot adaptation"
+    }
+  }
+]

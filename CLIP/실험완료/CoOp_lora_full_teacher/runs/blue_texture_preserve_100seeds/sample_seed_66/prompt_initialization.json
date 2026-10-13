@@ -1,0 +1,10 @@
+{
+  "prompt_seed": 777,
+  "n_ctx": 16,
+  "ctx_shape": [
+    16,
+    512
+  ],
+  "init_std": 0.02,
+  "note": "모든 shot 실험은 이 base_ctx에서 시작함"
+}

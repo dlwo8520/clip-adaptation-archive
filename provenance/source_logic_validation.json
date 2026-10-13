@@ -1,0 +1,5 @@
+{
+  "python_files_compared": 165,
+  "algorithm_ast_mismatches": [],
+  "normalization": "only personal-path literals and injected workspace-path helper"
+}

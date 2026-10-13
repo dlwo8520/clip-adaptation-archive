@@ -1,8 +1,10 @@
-# Publish the prepared repositories privately
+# GitHub publication and future updates
 
-The user selected local preparation and upload instructions. No GitHub repository was created and no push was attempted. The connected account was `dlwo8520`; the visible repository list had no matching research repository. The GitHub connector could list/read existing repositories, but exposed no repository-creation action. The server had no authenticated GitHub CLI.
+Both repositories were created and published as **private** repositories under `dlwo8520` on 2026-10-13 KST, after interactive GitHub CLI authentication. Their default branch is `main`. The initial uploaded heads were `120669c0fc0b503dc32f658b4e4d1db4234017b3` (CLIP) and `6d155e8b93f40dd90d158b16c68fb387e85750f1` (CIL). Remote main SHAs and all three curated CIL history tags were verified against the local refs. Large external evidence and private-history bundles remain local.
 
-Install the GitHub CLI through its official distribution, then authenticate interactively on your machine:
+For future work, review and commit changes, then run `git push origin main` from the corresponding repository. Each local `main` tracks `origin/main`. Do not recreate these repositories.
+
+If using another machine, install the GitHub CLI through its official distribution, then authenticate interactively:
 
 ```bash
 gh auth login --hostname github.com --git-protocol https --web
@@ -10,7 +12,7 @@ gh auth setup-git
 gh auth status
 ```
 
-From the parent directory containing both prepared repositories:
+The following commands document the initial private publication. They have already been executed; do not rerun repository creation:
 
 ```bash
 cd clip-adaptation-archive
@@ -35,6 +37,6 @@ git rev-parse origin/main
 git status --short
 ```
 
-Both SHAs must match; visibility must be PRIVATE. Inspect README, results and excluded-file manifests on GitHub. Intended URLs are `https://github.com/dlwo8520/clip-adaptation-archive` and `https://github.com/dlwo8520/efcil-structure-research`; they are not verified existing repositories.
+Both SHAs must match; visibility must be PRIVATE. The verified repositories are [CLIP archive](https://github.com/dlwo8520/clip-adaptation-archive) and [CIL/EFCIL research](https://github.com/dlwo8520/efcil-structure-research). README, results and provenance manifests are versioned there. Publication confirms file and history transfer; it does not establish full GPU experiment reproducibility.
 
 Command references: [GitHub CLI repository creation](https://cli.github.com/manual/gh_repo_create), [interactive authentication](https://cli.github.com/manual/gh_auth_login), [Git credential setup](https://cli.github.com/manual/gh_auth_setup-git).

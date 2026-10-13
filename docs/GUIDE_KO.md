@@ -6,4 +6,4 @@
 
 큰 표는 `python tools/restore_tables.py`로 복원합니다. `python tools/rebuild_indexes.py`로 수치 목록을 재생성하고 `python tools/validate_export.py`로 보존 검사를 합니다. GPU 재학습은 이번 정리 작업에서 실행하지 않았습니다. 교사 checkpoint, dataset, 환경은 별도로 준비해야 합니다. 개인 경로 수정은 복사본에만 적용했고 원본은 보존했습니다.
 
-GitHub 업로드는 사용자 선택에 따라 실행하지 않았습니다. `docs/UPLOAD.md`에서 인증 후 private 생성·push·확인 명령을 확인하세요.
+2026-10-13 KST에 [GitHub private 저장소](https://github.com/dlwo8520/clip-adaptation-archive)로 업로드하고 main 커밋 일치를 확인했습니다. 후속 변경은 검토·commit 후 `git push origin main`으로 반영합니다. `docs/UPLOAD.md`에 업로드 기록과 확인 명령이 있습니다.

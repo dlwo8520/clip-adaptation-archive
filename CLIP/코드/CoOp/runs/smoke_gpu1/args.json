@@ -1,0 +1,29 @@
+{
+  "target_name": "cifar10_smoke",
+  "target_root": null,
+  "target_train": "/data/datasets/cifar10/train",
+  "target_test": "/data/datasets/cifar10/test",
+  "target_classnames": null,
+  "split_test_ratio": 0.5,
+  "preserve": [
+    "cifar100:/data/datasets/cifar100/test"
+  ],
+  "model": "ViT-B-32-quickgelu",
+  "pretrained": "openai",
+  "shots_list": [
+    1
+  ],
+  "n_ctx": 16,
+  "epochs": 1,
+  "eval_every": 1,
+  "lr": 0.002,
+  "weight_decay": 0.0,
+  "batch_size": 64,
+  "num_workers": 2,
+  "device": "cuda",
+  "seed": 42,
+  "prompt_seed": 777,
+  "max_eval_samples": 256,
+  "cache_features": true,
+  "output_dir": "runs/smoke_gpu1"
+}

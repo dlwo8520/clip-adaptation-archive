@@ -1,6 +1,6 @@
 # Categorized repository map
 
-This map gives each research package, standalone graph condition and repository support area its own category and entry point. Folder guides add navigation to the preserved sources. The GitHub file list shows the latest category-specific documentation commit for each covered folder.
+Folders are grouped by research method. Each guide briefly states purpose and evidence status. File-list messages use `method / artifact type` categories for code, configs, records, tables, figures and notes.
 
 ## Prompt and adapter baselines
 
@@ -140,4 +140,4 @@ This map gives each research package, standalone graph condition and repository 
 
 ## Reading the evidence
 
-Use the linked experiment record and saved result metadata for scientific claims. Upstream reference code, historical bundles, diagnostic old/test-data access and incomplete GPU runs have separate categories. Categorization does not turn a preserved result into a new experimental replicate.
+Use original run records for scientific claims. Category snapshot commits organize existing files; they do not represent new experiments. Earlier history remains reachable through a merge, and preserved source/result blobs are unchanged.

@@ -1,0 +1,45 @@
+nohup: ignoring input
+
+============================================================
+[START] selection=teacher_entropy config=B__synthetic_zscl_like
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_entropy/B__synthetic_zscl_like
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_entropy__B__synthetic_zscl_like.log
+============================================================
+[DONE] selection=teacher_entropy config=B__synthetic_zscl_like
+
+============================================================
+[START] selection=teacher_entropy config=C__gift_synthetic
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_entropy/C__gift_synthetic
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_entropy__C__gift_synthetic.log
+============================================================
+[DONE] selection=teacher_entropy config=C__gift_synthetic
+
+============================================================
+[START] selection=teacher_entropy config=D__gift_synthetic_awc
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_entropy/D__gift_synthetic_awc
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_entropy__D__gift_synthetic_awc.log
+============================================================
+[DONE] selection=teacher_entropy config=D__gift_synthetic_awc
+
+============================================================
+[START] selection=teacher_margin config=B__synthetic_zscl_like
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/B__synthetic_zscl_like
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_margin__B__synthetic_zscl_like.log
+============================================================
+[DONE] selection=teacher_margin config=B__synthetic_zscl_like
+
+============================================================
+[START] selection=teacher_margin config=C__gift_synthetic
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/C__gift_synthetic
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_margin__C__gift_synthetic.log
+============================================================
+[DONE] selection=teacher_margin config=C__gift_synthetic
+
+============================================================
+[START] selection=teacher_margin config=D__gift_synthetic_awc
+ROOT_OUT=runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc
+LOG_PATH=runs/coop_gift_BCD_3selection_seed0_49_gpu4/logs/teacher_margin__D__gift_synthetic_awc.log
+============================================================
+[DONE] selection=teacher_margin config=D__gift_synthetic_awc
+
+All requested runs finished.

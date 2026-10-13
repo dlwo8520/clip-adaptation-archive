@@ -1,0 +1,221 @@
+===== run_coop_gift_one_config.sh =====
+ROOT_OUT             : runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc
+PRESERVE_METHOD      : gift_synthetic
+SELECTION_METHOD     : teacher_margin
+LAMBDA_DISTILL       : 1.0 (refdistill 경로용)
+LAMBDA_WC            : 0.0 (raw WC)
+GIFT_SYNTHETIC_ROOT  : ${RESEARCH_WORKSPACE}/projects/ZSCL_DataSelection_refdistill_gift/data/gift_synthetic_dtd
+GIFT_ALPHA/BETA      : 1.0 / 0.25
+GIFT_BATCH_SIZE      : 64
+USE_AWC              : on (effective gift_lambda_awc=0.1)
+GIFT_MAX_IMAGES      : 0
+SEED_START           : 0
+NUM_SAMPLE_SEEDS     : 50
+PARALLEL             : 1
+TARGET_NAME / ROOT   : texture / /data/datasets/texture
+PRESERVE_SPECS       : imagenet:/data/datasets/imagenet_1k/val cifar100:/data/datasets/cifar100/test
+GPU_ID               : 3
+EPOCHS / EVAL_EVERY  : 50 / 5
+SHOTS_LIST           : 1 2 4 8 16
+
+===== batch 1: seed 0 ~ 0 시작 =====
+  [start] sample_seed=0 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_0
+===== batch 1 완료 =====
+
+===== batch 2: seed 1 ~ 1 시작 =====
+  [start] sample_seed=1 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_1
+===== batch 2 완료 =====
+
+===== batch 3: seed 2 ~ 2 시작 =====
+  [start] sample_seed=2 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_2
+===== batch 3 완료 =====
+
+===== batch 4: seed 3 ~ 3 시작 =====
+  [start] sample_seed=3 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_3
+===== batch 4 완료 =====
+
+===== batch 5: seed 4 ~ 4 시작 =====
+  [start] sample_seed=4 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_4
+===== batch 5 완료 =====
+
+===== batch 6: seed 5 ~ 5 시작 =====
+  [start] sample_seed=5 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_5
+===== batch 6 완료 =====
+
+===== batch 7: seed 6 ~ 6 시작 =====
+  [start] sample_seed=6 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_6
+===== batch 7 완료 =====
+
+===== batch 8: seed 7 ~ 7 시작 =====
+  [start] sample_seed=7 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_7
+===== batch 8 완료 =====
+
+===== batch 9: seed 8 ~ 8 시작 =====
+  [start] sample_seed=8 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_8
+===== batch 9 완료 =====
+
+===== batch 10: seed 9 ~ 9 시작 =====
+  [start] sample_seed=9 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_9
+===== batch 10 완료 =====
+
+===== batch 11: seed 10 ~ 10 시작 =====
+  [start] sample_seed=10 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_10
+===== batch 11 완료 =====
+
+===== batch 12: seed 11 ~ 11 시작 =====
+  [start] sample_seed=11 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_11
+===== batch 12 완료 =====
+
+===== batch 13: seed 12 ~ 12 시작 =====
+  [start] sample_seed=12 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_12
+===== batch 13 완료 =====
+
+===== batch 14: seed 13 ~ 13 시작 =====
+  [start] sample_seed=13 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_13
+===== batch 14 완료 =====
+
+===== batch 15: seed 14 ~ 14 시작 =====
+  [start] sample_seed=14 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_14
+===== batch 15 완료 =====
+
+===== batch 16: seed 15 ~ 15 시작 =====
+  [start] sample_seed=15 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_15
+===== batch 16 완료 =====
+
+===== batch 17: seed 16 ~ 16 시작 =====
+  [start] sample_seed=16 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_16
+===== batch 17 완료 =====
+
+===== batch 18: seed 17 ~ 17 시작 =====
+  [start] sample_seed=17 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_17
+===== batch 18 완료 =====
+
+===== batch 19: seed 18 ~ 18 시작 =====
+  [start] sample_seed=18 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_18
+===== batch 19 완료 =====
+
+===== batch 20: seed 19 ~ 19 시작 =====
+  [start] sample_seed=19 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_19
+===== batch 20 완료 =====
+
+===== batch 21: seed 20 ~ 20 시작 =====
+  [start] sample_seed=20 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_20
+===== batch 21 완료 =====
+
+===== batch 22: seed 21 ~ 21 시작 =====
+  [start] sample_seed=21 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_21
+===== batch 22 완료 =====
+
+===== batch 23: seed 22 ~ 22 시작 =====
+  [start] sample_seed=22 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_22
+===== batch 23 완료 =====
+
+===== batch 24: seed 23 ~ 23 시작 =====
+  [start] sample_seed=23 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_23
+===== batch 24 완료 =====
+
+===== batch 25: seed 24 ~ 24 시작 =====
+  [start] sample_seed=24 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_24
+===== batch 25 완료 =====
+
+===== batch 26: seed 25 ~ 25 시작 =====
+  [start] sample_seed=25 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_25
+===== batch 26 완료 =====
+
+===== batch 27: seed 26 ~ 26 시작 =====
+  [start] sample_seed=26 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_26
+===== batch 27 완료 =====
+
+===== batch 28: seed 27 ~ 27 시작 =====
+  [start] sample_seed=27 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_27
+===== batch 28 완료 =====
+
+===== batch 29: seed 28 ~ 28 시작 =====
+  [start] sample_seed=28 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_28
+===== batch 29 완료 =====
+
+===== batch 30: seed 29 ~ 29 시작 =====
+  [start] sample_seed=29 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_29
+===== batch 30 완료 =====
+
+===== batch 31: seed 30 ~ 30 시작 =====
+  [start] sample_seed=30 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_30
+===== batch 31 완료 =====
+
+===== batch 32: seed 31 ~ 31 시작 =====
+  [start] sample_seed=31 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_31
+===== batch 32 완료 =====
+
+===== batch 33: seed 32 ~ 32 시작 =====
+  [start] sample_seed=32 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_32
+===== batch 33 완료 =====
+
+===== batch 34: seed 33 ~ 33 시작 =====
+  [start] sample_seed=33 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_33
+===== batch 34 완료 =====
+
+===== batch 35: seed 34 ~ 34 시작 =====
+  [start] sample_seed=34 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_34
+===== batch 35 완료 =====
+
+===== batch 36: seed 35 ~ 35 시작 =====
+  [start] sample_seed=35 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_35
+===== batch 36 완료 =====
+
+===== batch 37: seed 36 ~ 36 시작 =====
+  [start] sample_seed=36 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_36
+===== batch 37 완료 =====
+
+===== batch 38: seed 37 ~ 37 시작 =====
+  [start] sample_seed=37 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_37
+===== batch 38 완료 =====
+
+===== batch 39: seed 38 ~ 38 시작 =====
+  [start] sample_seed=38 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_38
+===== batch 39 완료 =====
+
+===== batch 40: seed 39 ~ 39 시작 =====
+  [start] sample_seed=39 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_39
+===== batch 40 완료 =====
+
+===== batch 41: seed 40 ~ 40 시작 =====
+  [start] sample_seed=40 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_40
+===== batch 41 완료 =====
+
+===== batch 42: seed 41 ~ 41 시작 =====
+  [start] sample_seed=41 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_41
+===== batch 42 완료 =====
+
+===== batch 43: seed 42 ~ 42 시작 =====
+  [start] sample_seed=42 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_42
+===== batch 43 완료 =====
+
+===== batch 44: seed 43 ~ 43 시작 =====
+  [start] sample_seed=43 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_43
+===== batch 44 완료 =====
+
+===== batch 45: seed 44 ~ 44 시작 =====
+  [start] sample_seed=44 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_44
+===== batch 45 완료 =====
+
+===== batch 46: seed 45 ~ 45 시작 =====
+  [start] sample_seed=45 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_45
+===== batch 46 완료 =====
+
+===== batch 47: seed 46 ~ 46 시작 =====
+  [start] sample_seed=46 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_46
+===== batch 47 완료 =====
+
+===== batch 48: seed 47 ~ 47 시작 =====
+  [start] sample_seed=47 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_47
+===== batch 48 완료 =====
+
+===== batch 49: seed 48 ~ 48 시작 =====
+  [start] sample_seed=48 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_48
+===== batch 49 완료 =====
+
+===== batch 50: seed 49 ~ 49 시작 =====
+  [start] sample_seed=49 -> runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc/sample_seed_49
+===== batch 50 완료 =====
+
+===== runs/coop_gift_BCD_3selection_seed0_49_gpu4/teacher_margin/D__gift_synthetic_awc 의 모든 seed 종료 =====

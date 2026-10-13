@@ -1,0 +1,10 @@
+{
+  "num_candidates": 2820,
+  "score_mean": 1.3972795009613037,
+  "score_std": 0.746534526348114,
+  "score_min": 0.09280362725257874,
+  "score_max": 2.9986791610717773,
+  "clip_train_pool_accuracy": 0.4351063829787234,
+  "teacher_train_pool_accuracy": 0.4939716312056738,
+  "both_correct_rate": 0.3432624113475177
+}

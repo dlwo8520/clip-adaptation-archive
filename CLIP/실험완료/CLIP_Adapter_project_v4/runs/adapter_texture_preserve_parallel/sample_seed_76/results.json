@@ -1,0 +1,400 @@
+{
+  "args": {
+    "target_name": "texture",
+    "target_root": "/data/datasets/texture",
+    "target_train": null,
+    "target_test": null,
+    "target_classnames": null,
+    "split_test_ratio": 0.5,
+    "preserve": [
+      "imagenet:/data/datasets/imagenet_1k/val",
+      "cifar100:/data/datasets/cifar100/test"
+    ],
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "openai",
+    "shots_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "adapter_hidden_ratio": 0.25,
+    "adapter_alpha_init": 0.6,
+    "learnable_alpha": false,
+    "adapter_seed": 777,
+    "epochs": 50,
+    "eval_every": 5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 128,
+    "num_workers": 4,
+    "device": "cuda",
+    "seed": 42,
+    "sample_seed": 76,
+    "max_eval_samples": -1,
+    "cache_features": true,
+    "output_dir": "runs/adapter_texture_preserve_parallel/sample_seed_76"
+  },
+  "target_name": "texture",
+  "split_mode": "auto_classwise_split",
+  "preserve_info": {
+    "imagenet": {
+      "path": "/data/datasets/imagenet_1k/val",
+      "num_classes": 1000,
+      "num_images": 5000
+    },
+    "cifar100": {
+      "path": "/data/datasets/cifar100/test",
+      "num_classes": 100,
+      "num_images": 10000
+    }
+  },
+  "zero_shot_baselines": {
+    "target": {
+      "accuracy": 0.424822695035461,
+      "correct": 1198,
+      "total": 2820
+    },
+    "preserve": {
+      "imagenet": {
+        "accuracy": 0.605,
+        "correct": 3025,
+        "total": 5000
+      },
+      "cifar100": {
+        "accuracy": 0.6493,
+        "correct": 6493,
+        "total": 10000
+      }
+    }
+  },
+  "adapter_init": {
+    "trainer": "CLIPAdapterVisualOnly",
+    "adapter_seed": 777,
+    "feature_dim": 512,
+    "hidden_ratio": 0.25,
+    "alpha_init": 0.6,
+    "alpha_learnable": false,
+    "branches": [
+      "visual"
+    ],
+    "text_adapter": false,
+    "same_initial_adapter_across_shots": true,
+    "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+    "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+  },
+  "trainer": "CLIPAdapterVisualOnly",
+  "shots": [
+    {
+      "trainer": "CLIPAdapterVisualOnly",
+      "sample_seed": 76,
+      "split_seed": 42,
+      "shot": 1,
+      "fewshot_train_images": 47,
+      "final": {
+        "target_name": "texture",
+        "shot": 1,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.44361702127659575,
+          "correct": 1251,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.01879432624113475
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5658,
+            "correct": 2829,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.03920000000000001
+          },
+          "cifar100": {
+            "accuracy": 0.6203,
+            "correct": 6203,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.029000000000000026
+          }
+        },
+        "sample_seed": 76,
+        "split_seed": 42,
+        "adapter_seed": 777,
+        "trainer": "CLIPAdapterVisualOnly",
+        "train": {
+          "train_loss": 1.5382061004638672,
+          "train_acc": 0.5957446808510638,
+          "lr": 0.0,
+          "alpha_visual": 0.6000000238418579
+        },
+        "adapter_init": {
+          "trainer": "CLIPAdapterVisualOnly",
+          "adapter_seed": 777,
+          "feature_dim": 512,
+          "hidden_ratio": 0.25,
+          "alpha_init": 0.6,
+          "alpha_learnable": false,
+          "branches": [
+            "visual"
+          ],
+          "text_adapter": false,
+          "same_initial_adapter_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+          "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+        }
+      },
+      "history_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_1/history.json",
+      "checkpoint_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_1/adapter_final.pt"
+    },
+    {
+      "trainer": "CLIPAdapterVisualOnly",
+      "sample_seed": 76,
+      "split_seed": 42,
+      "shot": 2,
+      "fewshot_train_images": 94,
+      "final": {
+        "target_name": "texture",
+        "shot": 2,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.44468085106382976,
+          "correct": 1254,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.019858156028368767
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.57,
+            "correct": 2850,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.03500000000000003
+          },
+          "cifar100": {
+            "accuracy": 0.6253,
+            "correct": 6253,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.02400000000000002
+          }
+        },
+        "sample_seed": 76,
+        "split_seed": 42,
+        "adapter_seed": 777,
+        "trainer": "CLIPAdapterVisualOnly",
+        "train": {
+          "train_loss": 1.7460722923278809,
+          "train_acc": 0.5,
+          "lr": 0.0,
+          "alpha_visual": 0.6000000238418579
+        },
+        "adapter_init": {
+          "trainer": "CLIPAdapterVisualOnly",
+          "adapter_seed": 777,
+          "feature_dim": 512,
+          "hidden_ratio": 0.25,
+          "alpha_init": 0.6,
+          "alpha_learnable": false,
+          "branches": [
+            "visual"
+          ],
+          "text_adapter": false,
+          "same_initial_adapter_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+          "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+        }
+      },
+      "history_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_2/history.json",
+      "checkpoint_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_2/adapter_final.pt"
+    },
+    {
+      "trainer": "CLIPAdapterVisualOnly",
+      "sample_seed": 76,
+      "split_seed": 42,
+      "shot": 4,
+      "fewshot_train_images": 188,
+      "final": {
+        "target_name": "texture",
+        "shot": 4,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.4627659574468085,
+          "correct": 1305,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.03794326241134749
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5704,
+            "correct": 2852,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.034599999999999964
+          },
+          "cifar100": {
+            "accuracy": 0.6214,
+            "correct": 6214,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.027900000000000036
+          }
+        },
+        "sample_seed": 76,
+        "split_seed": 42,
+        "adapter_seed": 777,
+        "trainer": "CLIPAdapterVisualOnly",
+        "train": {
+          "train_loss": 1.7147959141021079,
+          "train_acc": 0.5372340425531915,
+          "lr": 0.0,
+          "alpha_visual": 0.6000000238418579
+        },
+        "adapter_init": {
+          "trainer": "CLIPAdapterVisualOnly",
+          "adapter_seed": 777,
+          "feature_dim": 512,
+          "hidden_ratio": 0.25,
+          "alpha_init": 0.6,
+          "alpha_learnable": false,
+          "branches": [
+            "visual"
+          ],
+          "text_adapter": false,
+          "same_initial_adapter_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+          "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+        }
+      },
+      "history_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_4/history.json",
+      "checkpoint_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_4/adapter_final.pt"
+    },
+    {
+      "trainer": "CLIPAdapterVisualOnly",
+      "sample_seed": 76,
+      "split_seed": 42,
+      "shot": 8,
+      "fewshot_train_images": 376,
+      "final": {
+        "target_name": "texture",
+        "shot": 8,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.48404255319148937,
+          "correct": 1365,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.05921985815602837
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.569,
+            "correct": 2845,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.03600000000000003
+          },
+          "cifar100": {
+            "accuracy": 0.6206,
+            "correct": 6206,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.028699999999999948
+          }
+        },
+        "sample_seed": 76,
+        "split_seed": 42,
+        "adapter_seed": 777,
+        "trainer": "CLIPAdapterVisualOnly",
+        "train": {
+          "train_loss": 1.7462489173767415,
+          "train_acc": 0.5132978723404256,
+          "lr": 0.0,
+          "alpha_visual": 0.6000000238418579
+        },
+        "adapter_init": {
+          "trainer": "CLIPAdapterVisualOnly",
+          "adapter_seed": 777,
+          "feature_dim": 512,
+          "hidden_ratio": 0.25,
+          "alpha_init": 0.6,
+          "alpha_learnable": false,
+          "branches": [
+            "visual"
+          ],
+          "text_adapter": false,
+          "same_initial_adapter_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+          "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+        }
+      },
+      "history_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_8/history.json",
+      "checkpoint_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_8/adapter_final.pt"
+    },
+    {
+      "trainer": "CLIPAdapterVisualOnly",
+      "sample_seed": 76,
+      "split_seed": 42,
+      "shot": 16,
+      "fewshot_train_images": 752,
+      "final": {
+        "target_name": "texture",
+        "shot": 16,
+        "epoch": 50,
+        "target": {
+          "accuracy": 0.5173758865248227,
+          "correct": 1459,
+          "total": 2820,
+          "zero_shot_baseline": 0.424822695035461,
+          "delta_from_zero_shot": 0.0925531914893617
+        },
+        "preserve": {
+          "imagenet": {
+            "accuracy": 0.5676,
+            "correct": 2838,
+            "total": 5000,
+            "zero_shot_baseline": 0.605,
+            "delta_from_zero_shot": -0.03739999999999999
+          },
+          "cifar100": {
+            "accuracy": 0.621,
+            "correct": 6210,
+            "total": 10000,
+            "zero_shot_baseline": 0.6493,
+            "delta_from_zero_shot": -0.028299999999999992
+          }
+        },
+        "sample_seed": 76,
+        "split_seed": 42,
+        "adapter_seed": 777,
+        "trainer": "CLIPAdapterVisualOnly",
+        "train": {
+          "train_loss": 1.6122348257835875,
+          "train_acc": 0.5651595744680851,
+          "lr": 0.0,
+          "alpha_visual": 0.6000000238418579
+        },
+        "adapter_init": {
+          "trainer": "CLIPAdapterVisualOnly",
+          "adapter_seed": 777,
+          "feature_dim": 512,
+          "hidden_ratio": 0.25,
+          "alpha_init": 0.6,
+          "alpha_learnable": false,
+          "branches": [
+            "visual"
+          ],
+          "text_adapter": false,
+          "same_initial_adapter_across_shots": true,
+          "epoch_0_meaning": "original CLIP zero-shot baseline before CLIP-Adapter adaptation",
+          "epoch_1_and_after": "visual-only CLIP-Adapter adapted result"
+        }
+      },
+      "history_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_16/history.json",
+      "checkpoint_path": "runs/adapter_texture_preserve_parallel/sample_seed_76/shot_16/adapter_final.pt"
+    }
+  ]
+}

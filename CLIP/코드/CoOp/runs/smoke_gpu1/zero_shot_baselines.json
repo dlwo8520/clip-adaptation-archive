@@ -1,0 +1,14 @@
+{
+  "target": {
+    "accuracy": 0.9140625,
+    "correct": 234,
+    "total": 256
+  },
+  "preserve": {
+    "cifar100": {
+      "accuracy": 0.70703125,
+      "correct": 181,
+      "total": 256
+    }
+  }
+}
